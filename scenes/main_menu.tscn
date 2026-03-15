@@ -1,0 +1,127 @@
+[gd_scene format=3 uid="uid://fy2d1iuwp8c7"]
+
+[ext_resource type="Texture2D" uid="uid://clomu3gll434a" path="res://images/фон_меню.png" id="1_ekxnf"]
+[ext_resource type="FontFile" uid="uid://cj7fwg0n6mvta" path="res://fonts/Playball-Regular.ttf" id="2_bqqt6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wu84c"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ekxnf"]
+bg_color = Color(0.8, 0.8, 0.8, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bqqt6"]
+bg_color = Color(0.23137255, 0.22745098, 0.22745098, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ln24"]
+bg_color = Color(0.8, 0.8, 0.8, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rtw2f"]
+bg_color = Color(0.23137255, 0.22745098, 0.22745098, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oa1go"]
+bg_color = Color(0.8, 0.8, 0.8, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tbmy8"]
+bg_color = Color(0.23137255, 0.22745098, 0.22745098, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Control" type="Control" unique_id=165468924]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1822286514]
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 650.0
+texture = ExtResource("1_ekxnf")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="." unique_id=1496269594]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 48.0
+offset_right = 853.0
+offset_bottom = 201.0
+theme_override_constants/outline_size = 27
+theme_override_fonts/font = ExtResource("2_bqqt6")
+theme_override_font_sizes/font_size = 120
+text = "PIZZ-ai` oloLO"
+
+[node name="play_button" type="Button" parent="." unique_id=496485673]
+layout_mode = 0
+offset_left = 857.0
+offset_top = 299.0
+offset_right = 1065.0
+offset_bottom = 379.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_bqqt6")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_wu84c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ekxnf")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bqqt6")
+text = "Play"
+
+[node name="settings_button" type="Button" parent="." unique_id=940436716]
+layout_mode = 0
+offset_left = 858.0
+offset_top = 410.0
+offset_right = 1066.0
+offset_bottom = 490.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_bqqt6")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_wu84c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_8ln24")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rtw2f")
+text = "Settings"
+
+[node name="exit_button" type="Button" parent="." unique_id=1833940695]
+layout_mode = 0
+offset_left = 858.0
+offset_top = 520.0
+offset_right = 1066.0
+offset_bottom = 600.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_bqqt6")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_wu84c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_oa1go")
+theme_override_styles/hover = SubResource("StyleBoxFlat_tbmy8")
+text = "Exit"

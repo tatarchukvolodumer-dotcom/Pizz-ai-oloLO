@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bn46xxea1n76f"]
+
+[ext_resource type="Script" uid="uid://c53m7w2pap7ff" path="res://scripts/scroll_bar.gd" id="1_qdxfk"]
+[ext_resource type="Texture2D" uid="uid://b2jsp1juuep12" path="res://images/scrolling.png" id="1_vopsf"]
+[ext_resource type="Texture2D" uid="uid://bsuvxcuy6olnv" path="res://images/scrolling_mark.png" id="2_qcehh"]
+[ext_resource type="Texture2D" uid="uid://bf0mnh54b10td" path="res://images/scrolling_fill.png" id="3_bpnp8"]
+[ext_resource type="Texture2D" uid="uid://d3uyqx6e2rtap" path="res://images/colored_track.png" id="3_ddx7h"]
+
+[node name="slider" type="Control" unique_id=662988858]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -752.0
+offset_bottom = -628.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qdxfk")
+
+[node name="Track" type="NinePatchRect" parent="." unique_id=794632569]
+layout_mode = 0
+offset_top = 3.0
+offset_right = 400.0
+offset_bottom = 17.0
+texture = ExtResource("1_vopsf")
+
+[node name="Fill" type="NinePatchRect" parent="Track" unique_id=1831947034]
+layout_mode = 0
+offset_left = 3.0
+offset_right = 17.0
+offset_bottom = 14.0
+texture = ExtResource("3_bpnp8")
+
+[node name="ColoredTrack" type="NinePatchRect" parent="Track" unique_id=815098528]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -380.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_ddx7h")
+
+[node name="Mark" type="TextureRect" parent="." unique_id=1938552876]
+layout_mode = 0
+offset_right = 20.0
+offset_bottom = 20.0
+texture = ExtResource("2_qcehh")
