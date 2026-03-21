@@ -1,3 +1,8 @@
-TextEdit
-Label
 Button
+MarginContainer
+HBoxContainer
+Label
+VBoxContainer
+Panel
+TextureRect
+TextEdit

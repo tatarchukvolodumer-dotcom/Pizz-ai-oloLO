@@ -1,0 +1,224 @@
+[gd_scene format=3 uid="uid://bmn5ug8wm4xfj"]
+
+[ext_resource type="Texture2D" uid="uid://clomu3gll434a" path="res://images/фон_меню.png" id="1_c2q7r"]
+[ext_resource type="FontFile" uid="uid://cj7fwg0n6mvta" path="res://fonts/Playball-Regular.ttf" id="2_xuytu"]
+[ext_resource type="Texture2D" uid="uid://otoycn80hx8w" path="res://images/inactive_pizza.png" id="3_5jxb8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yqd5o"]
+bg_color = Color(0.32156864, 0.32156864, 0.32156864, 0.57254905)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t0iyv"]
+content_margin_bottom = 50.0
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_71e6i"]
+content_margin_bottom = 50.0
+bg_color = Color(0.8, 0.8, 0.8, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ri6yo"]
+content_margin_bottom = 50.0
+bg_color = Color(0.23137255, 0.22745098, 0.22745098, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ul6ny"]
+bg_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ttv24"]
+bg_color = Color(0.8, 0.8, 0.8, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ff53b"]
+bg_color = Color(0.23137255, 0.22745098, 0.22745098, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[node name="Control" type="Control" unique_id=920780347]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=742159675]
+layout_mode = 0
+offset_right = 1155.0
+offset_bottom = 650.0
+texture = ExtResource("1_c2q7r")
+expand_mode = 1
+
+[node name="Panel" type="Panel" parent="." unique_id=1682112768]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -412.25
+offset_top = -207.25
+offset_right = 412.25
+offset_bottom = 207.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_yqd5o")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=750362711]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="title_evel" type="MarginContainer" parent="Panel/VBoxContainer" unique_id=499483219]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/title_evel" unique_id=1324136400]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_constants/outline_size = 11
+theme_override_fonts/font = ExtResource("2_xuytu")
+theme_override_font_sizes/font_size = 70
+text = "Levels"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="level_button" type="MarginContainer" parent="Panel/VBoxContainer" unique_id=283074636]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel/VBoxContainer/level_button" unique_id=1548086180]
+layout_mode = 2
+
+[node name="level1_button" type="MarginContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer" unique_id=5696981]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 20
+
+[node name="level1" type="Button" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button" unique_id=240058824]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_xuytu")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_t0iyv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_71e6i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ri6yo")
+text = "1"
+
+[node name="pizza1_1" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1" unique_id=1507311841]
+position = Vector2(39.25, 77.25)
+texture = ExtResource("3_5jxb8")
+
+[node name="pizza1_2" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1" unique_id=775401764]
+position = Vector2(102.25, 78.25)
+texture = ExtResource("3_5jxb8")
+
+[node name="pizza1_3" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1" unique_id=261181098]
+position = Vector2(167.25, 78.25)
+texture = ExtResource("3_5jxb8")
+
+[node name="level2_button" type="MarginContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer" unique_id=1516860164]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 20
+
+[node name="level2" type="Button" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button" unique_id=1296623039]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_xuytu")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_t0iyv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_71e6i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ri6yo")
+text = "2"
+
+[node name="pizza2_1" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2" unique_id=416038030]
+position = Vector2(39.25, 77.25)
+texture = ExtResource("3_5jxb8")
+
+[node name="pizza2_2" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2" unique_id=1574983713]
+position = Vector2(102.25, 78.25)
+texture = ExtResource("3_5jxb8")
+
+[node name="pizza2_3" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2" unique_id=1478121855]
+position = Vector2(167.25, 78.25)
+texture = ExtResource("3_5jxb8")
+
+[node name="level3_button" type="MarginContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer" unique_id=1366612690]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 20
+
+[node name="level3" type="Button" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button" unique_id=2130285495]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_xuytu")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_t0iyv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_71e6i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ri6yo")
+text = "3
+"
+
+[node name="pizza3_1" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3" unique_id=929663951]
+position = Vector2(39.25, 77.25)
+texture = ExtResource("3_5jxb8")
+
+[node name="pizza3_2" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3" unique_id=1367035310]
+position = Vector2(102.25, 78.25)
+texture = ExtResource("3_5jxb8")
+
+[node name="pizza3_3" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3" unique_id=903714980]
+position = Vector2(167.25, 78.25)
+texture = ExtResource("3_5jxb8")
+
+[node name="back_button" type="MarginContainer" parent="Panel/VBoxContainer" unique_id=1196255142]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel/VBoxContainer/back_button" unique_id=641055864]
+layout_mode = 2
+theme_override_constants/margin_left = 300
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 300
+theme_override_constants/margin_bottom = 20
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer/back_button/MarginContainer" unique_id=1566065596]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_xuytu")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_ul6ny")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ttv24")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ff53b")
+text = "Back"
