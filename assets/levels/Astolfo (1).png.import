@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bg3gvun3huhli"
-path="res://.godot/imported/Collected.png-230c605ea44511f1c557a90aaa764c3f.ctex"
+uid="uid://btdixp1lrrmqo"
+path="res://.godot/imported/Astolfo (1).png-21155e557cfd3b2ce16d54a37004d5f4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/levels/Collected.png"
-dest_files=["res://.godot/imported/Collected.png-230c605ea44511f1c557a90aaa764c3f.ctex"]
+source_file="res://assets/levels/Astolfo (1).png"
+dest_files=["res://.godot/imported/Astolfo (1).png-21155e557cfd3b2ce16d54a37004d5f4.ctex"]
 
 [params]
 
