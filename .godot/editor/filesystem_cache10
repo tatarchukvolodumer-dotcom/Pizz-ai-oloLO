@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1774102166
+::res://::1774111386
 icon.svg::CompressedTexture2D::3128981606640128985::1773587298::1774102007::1::::<><><>0<>0<>aaec14ff6ac3635c40ccb506369ebff2<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://addons/::1773587296
 ::res://addons/godot-sqlite/::1773587298
@@ -24,9 +24,19 @@ plugin.cfg::TextFile::-1::1773587298::0::1::::<><><>0<>0<><>::
 ::res://addons/godot-sqlite/bin/libgodot-cpp.ios.template_release.xcframework/::1773587297
 ::res://addons/godot-sqlite/bin/libgodot-cpp.ios.template_release.xcframework/ios-arm64/::1773587297
 ::res://addons/godot-sqlite/bin/libgodot-cpp.ios.template_release.xcframework/ios-arm64_x86_64-simulator/::1773587298
+::res://assets/::1774111386
+player.tscn::PackedScene::2191340945923734103::1774109361::0::1::::<><><>0<>0<><>::uid://gwekc0ixqqpd::::res://assets/player/idle.png<>uid://dfwkesxjr4cws::::res://assets/player/jump.png<>uid://b7i61ofmk1dak::::res://assets/player/run.png
+::res://assets/levels/::1774112275
+Collected.png::CompressedTexture2D::2865759198095371754::1774111511::1774111512::1::::<><><>0<>0<>2346131587a5741ca72735d47de377d5<>res://.godot/imported/Collected.png-230c605ea44511f1c557a90aaa764c3f.ctex::
+New Piskel (5).png::CompressedTexture2D::7906294351948799822::1774112275::1774112275::1::::<><><>0<>0<>799898a13eb87ccab600db49c4d919a3<>res://.godot/imported/New Piskel (5).png-adf9481b7cb7d4fb6432958db46b2d18.ctex::
+Terrain (16x16).png::CompressedTexture2D::5242733322507529359::1774111511::1774111512::1::::<><><>0<>0<>d84ad5647fcf8ca1d625f6bc8a746165<>res://.godot/imported/Terrain (16x16).png-e4061626e6b31cd4395e7027092c3624.ctex::
+::res://assets/player/::1774108417
+idle.png::CompressedTexture2D::466810242389301873::1774108413::1774108413::1::::<><><>0<>0<>fae48bd39f7138f9df930086ba61b963<>res://.godot/imported/idle.png-89a795d674ff15345971f5296c9aecd0.ctex::
+jump.png::CompressedTexture2D::7556237874345647966::1774108415::1774108415::1::::<><><>0<>0<>0f721bfa9fcc88616d55c5500c3eb146<>res://.godot/imported/jump.png-5507d946096bbba04a2cd20993f5c66c.ctex::
+run.png::CompressedTexture2D::4650908103170441158::1774108417::1774108417::1::::<><><>0<>0<>dbf19671cd3cfe0b0aeb890e6ccaa790<>res://.godot/imported/run.png-48888a5ed41be350e0fb98028ce827e3.ctex::
 ::res://fonts/::1774102007
 Playball-Regular.ttf::FontFile::5470944275080941194::1773587298::1774102007::1::::<><><>0<>0<>68f9518d01425ebac9a72674b3cf0996<>res://.godot/imported/Playball-Regular.ttf-6afd850e95802286261844abf8b08198.fontdata::
-::res://images/::1774104043
+::res://images/::1774111057
 active_pizza.png::CompressedTexture2D::4491005415772896829::1774104043::1774104044::1::::<><><>0<>0<>2f03117de1dc547d431b907da09f00fc<>res://.godot/imported/active_pizza.png-b9d2f7987ae69e6184cef917af636670.ctex::
 button_left.png::CompressedTexture2D::452992340404807120::1773587298::1774102007::1::::<><><>0<>0<>dc10012150a68c4eb442079e71746d22<>res://.godot/imported/button_left.png-68c78430319f7baa6599d97fc5f16d55.ctex::
 button_right.png::CompressedTexture2D::3560374962813536195::1773587298::1774102007::1::::<><><>0<>0<>7f756d92d04eec3e1a537ada6bef5985<>res://.godot/imported/button_right.png-dc03009eff911f9c80e1b08b2393e8ea.ctex::
@@ -40,8 +50,9 @@ scrolling.png::CompressedTexture2D::4301219934930837355::1773587298::1774102007:
 scrolling_fill.png::CompressedTexture2D::2789726580296317165::1773587298::1774102007::1::::<><><>0<>0<>f76b672b6820bfa1176a236e19849298<>res://.godot/imported/scrolling_fill.png-a26e4be829f48537b0e8f8ca3cfdd346.ctex::
 scrolling_mark.png::CompressedTexture2D::3692423691442016475::1773587298::1774102007::1::::<><><>0<>0<>d7ac00dbc88477382a5accd8471c729f<>res://.godot/imported/scrolling_mark.png-9384ffeed0ab1a0f5c1b35367f824eaf.ctex::
 фон_меню.png::CompressedTexture2D::5574585736190983746::1773587298::1774102008::1::::<><><>0<>0<>9b55913f64f5e2959f4bb18a5421edf8<>res://.godot/imported/фон_меню.png-dbd1133da19dfad3f7f67a5b792843e6.ctex::
-фон_рівня.png::CompressedTexture2D::6111964773165258772::1773587298::1774102008::1::::<><><>0<>0<>526454654e4b66c613e9134c9770f344<>res://.godot/imported/фон_рівня.png-a75ecf42f9883681cdf8774113b36a84.ctex::
-::res://scenes/::1774102673
+фон_рівня.png::CompressedTexture2D::7316698152512373969::1774111057::1774111057::1::::<><><>0<>0<>7ffe0c430b147d6ebd344c218e041b37<>res://.godot/imported/фон_рівня.png-a75ecf42f9883681cdf8774113b36a84.ctex::
+::res://scenes/::1774104335
+chose_level_menu.tscn::PackedScene::3257381310948787127::1774104335::0::1::::<><><>0<>0<><>::uid://clomu3gll434a::::res://images/фон_меню.png<>uid://cj7fwg0n6mvta::::res://fonts/Playball-Regular.ttf<>uid://otoycn80hx8w::::res://images/inactive_pizza.png
 main_menu.tscn::PackedScene::402135379378280512::1773587298::0::1::::<><><>0<>0<><>::uid://clomu3gll434a::::res://images/фон_меню.png<>uid://cj7fwg0n6mvta::::res://fonts/Playball-Regular.ttf
 saving_menu.tscn::PackedScene::1459082647448180135::1774102673::0::1::::<><><>0<>0<><>::uid://clomu3gll434a::::res://images/фон_меню.png<>uid://cj7fwg0n6mvta::::res://fonts/Playball-Regular.ttf
 scroll_bar.tscn::PackedScene::3360667120142393259::1773587298::0::1::::<><><>0<>0<><>::uid://c53m7w2pap7ff::::res://scripts/scroll_bar.gd<>uid://b2jsp1juuep12::::res://images/scrolling.png<>uid://bsuvxcuy6olnv::::res://images/scrolling_mark.png<>uid://bf0mnh54b10td::::res://images/scrolling_fill.png<>uid://d3uyqx6e2rtap::::res://images/colored_track.png

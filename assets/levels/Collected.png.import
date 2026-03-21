@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcii7jyv3kyb6"
-path="res://.godot/imported/фон_рівня.png-a75ecf42f9883681cdf8774113b36a84.ctex"
+uid="uid://bg3gvun3huhli"
+path="res://.godot/imported/Collected.png-230c605ea44511f1c557a90aaa764c3f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://images/фон_рівня.png"
-dest_files=["res://.godot/imported/фон_рівня.png-a75ecf42f9883681cdf8774113b36a84.ctex"]
+source_file="res://assets/levels/Collected.png"
+dest_files=["res://.godot/imported/Collected.png-230c605ea44511f1c557a90aaa764c3f.ctex"]
 
 [params]
 
