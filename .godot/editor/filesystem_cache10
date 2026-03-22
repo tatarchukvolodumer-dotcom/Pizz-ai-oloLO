@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1774115486
+::res://::1774177757
 icon.svg::CompressedTexture2D::3128981606640128985::1773573207::1774113352::1::::<><><>0<>0<>aaec14ff6ac3635c40ccb506369ebff2<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://addons/::1773573470
 ::res://addons/godot-sqlite/::1773573478
@@ -7,7 +7,7 @@ gdsqlite.gdextension::GDExtension::4837341577405836572::1773573478::0::1::::<><>
 godot-sqlite.gd::GDScript::6354497535622739150::1773573478::0::1::::<>EditorPlugin<><>0<>1<><>::
 LICENSE.md::TextFile::-1::1773573470::0::1::::<><><>0<>0<><>::
 plugin.cfg::TextFile::-1::1773573478::0::1::::<><><>0<>0<><>::
-::res://addons/godot-sqlite/bin/::1774115314
+::res://addons/godot-sqlite/bin/::1774176772
 ::res://addons/godot-sqlite/bin/libgdsqlite.ios.template_debug.xcframework/::1773573470
 ::res://addons/godot-sqlite/bin/libgdsqlite.ios.template_debug.xcframework/ios-arm64/::1773573470
 ::res://addons/godot-sqlite/bin/libgdsqlite.ios.template_debug.xcframework/ios-arm64_x86_64-simulator/::1773573470
@@ -24,8 +24,8 @@ plugin.cfg::TextFile::-1::1773573478::0::1::::<><><>0<>0<><>::
 ::res://addons/godot-sqlite/bin/libgodot-cpp.ios.template_release.xcframework/::1773573476
 ::res://addons/godot-sqlite/bin/libgodot-cpp.ios.template_release.xcframework/ios-arm64/::1773573476
 ::res://addons/godot-sqlite/bin/libgodot-cpp.ios.template_release.xcframework/ios-arm64_x86_64-simulator/::1773573478
-::res://assets/::1774115304
-level_1.tscn::PackedScene::7775446890482470646::1774115304::0::1::::<><><>0<>0<><>::uid://btdixp1lrrmqo::::res://assets/levels/Astolfo (1).png<>uid://cgxvb064nbyhj::::res://assets/levels/Terrain (16x16).png<>uid://6hrchnootkup::::res://assets/player.tscn
+::res://assets/::1774177757
+level_1.tscn::PackedScene::7775446890482470646::1774169294::0::1::::<><><>0<>0<><>::uid://btdixp1lrrmqo::::res://assets/levels/Astolfo (1).png<>uid://qx8buuunomk6::::res://images/фон_рівня.jpg<>uid://cgxvb064nbyhj::::res://assets/levels/Terrain (16x16).png<>uid://6hrchnootkup::::res://assets/player.tscn<>uid://7llj73374022::::res://assets/fork.tscn<>uid://tw8vvlt1qhqg::::res://assets/plate.tscn
 player.tscn::PackedScene::2191340945923734103::1774113322::0::1::::<><><>0<>0<><>::uid://gwekc0ixqqpd::::res://assets/player/idle.png<>uid://dfwkesxjr4cws::::res://assets/player/jump.png<>uid://b7i61ofmk1dak::::res://assets/player/run.png
 ::res://assets/levels/::1774115170
 Astolfo (1).png::CompressedTexture2D::3726729483818196950::1774115018::1774115018::1::::<><><>0<>0<>9e3c7d2e8e4daa0b6c40656f3d3f8d9c<>res://.godot/imported/Astolfo (1).png-21155e557cfd3b2ce16d54a37004d5f4.ctex::
@@ -34,9 +34,14 @@ Terrain (16x16).png::CompressedTexture2D::5242733322507529359::1774113322::17741
 idle.png::CompressedTexture2D::466810242389301873::1774113322::1774113352::1::::<><><>0<>0<>fae48bd39f7138f9df930086ba61b963<>res://.godot/imported/idle.png-89a795d674ff15345971f5296c9aecd0.ctex::
 jump.png::CompressedTexture2D::7556237874345647966::1774113322::1774113352::1::::<><><>0<>0<>0f721bfa9fcc88616d55c5500c3eb146<>res://.godot/imported/jump.png-5507d946096bbba04a2cd20993f5c66c.ctex::
 run.png::CompressedTexture2D::4650908103170441158::1774113322::1774113352::1::::<><><>0<>0<>dbf19671cd3cfe0b0aeb890e6ccaa790<>res://.godot/imported/run.png-48888a5ed41be350e0fb98028ce827e3.ctex::
+::res://assets/tools/::1774177979
+Fork (2).png::CompressedTexture2D::1929085170757289437::1774177734::1774177757::1::::<><><>0<>0<>77fc96fd119094284587439496ad8852<>res://.godot/imported/Fork (2).png-b61c2021064551843a440ad6aad8bf38.ctex::
+Knife (1).png::CompressedTexture2D::3981937486680106889::1774177840::1774177840::1::::<><><>0<>0<>23af207e8dd81ec82a77040a17e49263<>res://.godot/imported/Knife (1).png-bf367a98058a1dfdcb8d9d25c9d48fc1.ctex::
+Oven (1).png::CompressedTexture2D::5185747869553865519::1774177979::1774177980::1::::<><><>0<>0<>349d622ce04abbe2ee13bacf7e379ea2<>res://.godot/imported/Oven (1).png-04bbcc8b220f4b6aacc31b9a03ac2434.ctex::
+Plate (1).png::CompressedTexture2D::4731774026812085404::1774177926::1774177926::1::::<><><>0<>0<>d5c76358c2086dcb1bc92e2531c5fd1e<>res://.godot/imported/Plate (1).png-b8a9420a4f5841d2b296314831fb0598.ctex::
 ::res://fonts/::1773573223
 Playball-Regular.ttf::FontFile::5470944275080941194::1773573207::1773573223::1::::<><><>0<>0<>68f9518d01425ebac9a72674b3cf0996<>res://.godot/imported/Playball-Regular.ttf-6afd850e95802286261844abf8b08198.fontdata::
-::res://images/::1774115486
+::res://images/::1774115641
 active_pizza.png::CompressedTexture2D::4491005415772896829::1774115230::1774113352::1::::<><><>0<>0<>2f03117de1dc547d431b907da09f00fc<>res://.godot/imported/active_pizza.png-b9d2f7987ae69e6184cef917af636670.ctex::
 button_left.png::CompressedTexture2D::452992340404807120::1773573207::1773573223::1::::<><><>0<>0<>dc10012150a68c4eb442079e71746d22<>res://.godot/imported/button_left.png-68c78430319f7baa6599d97fc5f16d55.ctex::
 button_right.png::CompressedTexture2D::3560374962813536195::1773573207::1773573223::1::::<><><>0<>0<>7f756d92d04eec3e1a537ada6bef5985<>res://.godot/imported/button_right.png-dc03009eff911f9c80e1b08b2393e8ea.ctex::

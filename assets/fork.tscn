@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://7llj73374022"]
+
+[ext_resource type="Texture2D" uid="uid://2qp0sce07rlt" path="res://assets/tools/Fork (2).png" id="1_mekkk"]
+
+[node name="Fork" type="Node2D" unique_id=571234564]
+
+[node name="Fork(2)" type="Sprite2D" parent="." unique_id=1745065549]
+texture = ExtResource("1_mekkk")
