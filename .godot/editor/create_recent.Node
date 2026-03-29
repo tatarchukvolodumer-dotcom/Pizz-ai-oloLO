@@ -1,10 +1,10 @@
+CollisionShape2D
 Label
 Node2D
 TileMapLayer
 Sprite2D
 Camera2D
 TextureRect
-CollisionShape2D
 AnimatedSprite2D
 AnimatableBody2D
 CharacterBody2D

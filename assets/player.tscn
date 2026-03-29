@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://6hrchnootkup"]
 
 [ext_resource type="Texture2D" uid="uid://gwekc0ixqqpd" path="res://assets/player/idle.png" id="1_insbl"]
+[ext_resource type="Script" uid="uid://m7jnfovxje2n" path="res://assets/player.gd" id="1_rug40"]
 [ext_resource type="Texture2D" uid="uid://dfwkesxjr4cws" path="res://assets/player/jump.png" id="2_rug40"]
 [ext_resource type="Texture2D" uid="uid://b7i61ofmk1dak" path="res://assets/player/run.png" id="3_mxi64"]
 
@@ -110,11 +111,14 @@ animations = [{
 size = Vector2(65, 92)
 
 [node name="Player" type="CharacterBody2D" unique_id=162535723]
+script = ExtResource("1_rug40")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=684203194]
 scale = Vector2(0.08, 0.08)
 sprite_frames = SubResource("SpriteFrames_6kviw")
 animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.1281556
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=737074922]
 position = Vector2(0.5, -1)
