@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1774814243
+::res://::1774888958
 icon.svg::CompressedTexture2D::3128981606640128985::1773587298::1774810338::1::::<><><>0<>0<>aaec14ff6ac3635c40ccb506369ebff2<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://addons/::1773587296
 ::res://addons/godot-sqlite/::1773587298
@@ -7,7 +7,7 @@ gdsqlite.gdextension::GDExtension::4837341577405836572::1773587298::0::1::::<><>
 godot-sqlite.gd::GDScript::6354497535622739150::1773587298::0::1::::<>EditorPlugin<><>0<>1<><>::
 LICENSE.md::TextFile::-1::1773587296::0::1::::<><><>0<>0<><>::
 plugin.cfg::TextFile::-1::1773587298::0::1::::<><><>0<>0<><>::
-::res://addons/godot-sqlite/bin/::1774814239
+::res://addons/godot-sqlite/bin/::1774888954
 ::res://addons/godot-sqlite/bin/libgdsqlite.ios.template_debug.xcframework/::1773587296
 ::res://addons/godot-sqlite/bin/libgdsqlite.ios.template_debug.xcframework/ios-arm64/::1773587296
 ::res://addons/godot-sqlite/bin/libgdsqlite.ios.template_debug.xcframework/ios-arm64_x86_64-simulator/::1773587296
@@ -24,14 +24,15 @@ plugin.cfg::TextFile::-1::1773587298::0::1::::<><><>0<>0<><>::
 ::res://addons/godot-sqlite/bin/libgodot-cpp.ios.template_release.xcframework/::1773587297
 ::res://addons/godot-sqlite/bin/libgodot-cpp.ios.template_release.xcframework/ios-arm64/::1773587297
 ::res://addons/godot-sqlite/bin/libgodot-cpp.ios.template_release.xcframework/ios-arm64_x86_64-simulator/::1773587298
-::res://assets/::1774810384
+::res://assets/::1774818536
 fork.tscn::PackedScene::2269436836095121533::1774810289::0::1::::<><><>0<>0<><>::uid://2qp0sce07rlt::::res://assets/tools/Fork (2).png
 knife.tscn::PackedScene::7807449227106210246::1774810289::0::1::::<><><>0<>0<><>::uid://bwy46trfojkrx::::res://assets/tools/Knife (1).png
-level_1.tscn::PackedScene::7775446890482470646::1774810289::0::1::::<><><>0<>0<><>::uid://btdixp1lrrmqo::::res://assets/levels/Astolfo (1).png<>uid://qx8buuunomk6::::res://images/фон_рівня.jpg<>uid://cgxvb064nbyhj::::res://assets/levels/Terrain (16x16).png<>uid://6hrchnootkup::::res://assets/player.tscn<>uid://7llj73374022::::res://assets/fork.tscn<>uid://tw8vvlt1qhqg::::res://assets/plate.tscn
-level_2.tscn::PackedScene::4385578572918030864::1774810289::0::1::::<><><>0<>0<><>::uid://qx8buuunomk6::::res://images/фон_рівня.jpg<>uid://btdixp1lrrmqo::::res://assets/levels/Astolfo (1).png<>uid://cgxvb064nbyhj::::res://assets/levels/Terrain (16x16).png<>uid://6hrchnootkup::::res://assets/player.tscn<>uid://tw8vvlt1qhqg::::res://assets/plate.tscn<>uid://7llj73374022::::res://assets/fork.tscn<>uid://djh8svubrasnu::::res://assets/knife.tscn
-level_3.tscn::PackedScene::6575023854882583960::1774810384::0::1::::<><><>0<>0<><>::uid://qx8buuunomk6::::res://images/фон_рівня.jpg<>uid://btdixp1lrrmqo::::res://assets/levels/Astolfo (1).png<>uid://cgxvb064nbyhj::::res://assets/levels/Terrain (16x16).png<>uid://6hrchnootkup::::res://assets/player.tscn<>uid://tw8vvlt1qhqg::::res://assets/plate.tscn<>uid://7llj73374022::::res://assets/fork.tscn<>uid://djh8svubrasnu::::res://assets/knife.tscn
+level_1.tscn::PackedScene::7775446890482470646::1774818322::0::1::::<><><>0<>0<><>::uid://btdixp1lrrmqo::::res://assets/levels/Astolfo (1).png<>uid://qx8buuunomk6::::res://images/фон_рівня.jpg<>uid://cgxvb064nbyhj::::res://assets/levels/Terrain (16x16).png<>uid://6hrchnootkup::::res://assets/player.tscn<>uid://7llj73374022::::res://assets/fork.tscn<>uid://tw8vvlt1qhqg::::res://assets/plate.tscn
+level_2.tscn::PackedScene::4385578572918030864::1774816095::0::1::::<><><>0<>0<><>::uid://qx8buuunomk6::::res://images/фон_рівня.jpg<>uid://btdixp1lrrmqo::::res://assets/levels/Astolfo (1).png<>uid://cgxvb064nbyhj::::res://assets/levels/Terrain (16x16).png<>uid://6hrchnootkup::::res://assets/player.tscn<>uid://tw8vvlt1qhqg::::res://assets/plate.tscn<>uid://7llj73374022::::res://assets/fork.tscn<>uid://djh8svubrasnu::::res://assets/knife.tscn
+level_3.tscn::PackedScene::6575023854882583960::1774816121::0::1::::<><><>0<>0<><>::uid://qx8buuunomk6::::res://images/фон_рівня.jpg<>uid://btdixp1lrrmqo::::res://assets/levels/Astolfo (1).png<>uid://cgxvb064nbyhj::::res://assets/levels/Terrain (16x16).png<>uid://6hrchnootkup::::res://assets/player.tscn<>uid://tw8vvlt1qhqg::::res://assets/plate.tscn<>uid://7llj73374022::::res://assets/fork.tscn<>uid://djh8svubrasnu::::res://assets/knife.tscn
 plate.tscn::PackedScene::1381046623027083394::1774810289::0::1::::<><><>0<>0<><>::uid://b8odvkxyb0d45::::res://assets/tools/Plate (1).png
-player.tscn::PackedScene::2191340945923734103::1774109361::0::1::::<><><>0<>0<><>::uid://gwekc0ixqqpd::::res://assets/player/idle.png<>uid://dfwkesxjr4cws::::res://assets/player/jump.png<>uid://b7i61ofmk1dak::::res://assets/player/run.png
+player.gd::GDScript::908896165271214731::1774818524::0::1::::<>CharacterBody2D<><>0<>0<><>::
+player.tscn::PackedScene::2191340945923734103::1774818536::0::1::::<><><>0<>0<><>::uid://gwekc0ixqqpd::::res://assets/player/idle.png<>uid://m7jnfovxje2n::::res://assets/player.gd<>uid://dfwkesxjr4cws::::res://assets/player/jump.png<>uid://b7i61ofmk1dak::::res://assets/player/run.png
 ::res://assets/levels/::1774810338
 Astolfo (1).png::CompressedTexture2D::3726729483818196950::1774117242::1774810338::1::::<><><>0<>0<>9e3c7d2e8e4daa0b6c40656f3d3f8d9c<>res://.godot/imported/Astolfo (1).png-21155e557cfd3b2ce16d54a37004d5f4.ctex::
 Terrain (16x16).png::CompressedTexture2D::5242733322507529359::1774111511::1774111512::1::::<><><>0<>0<>d84ad5647fcf8ca1d625f6bc8a746165<>res://.godot/imported/Terrain (16x16).png-e4061626e6b31cd4395e7027092c3624.ctex::
