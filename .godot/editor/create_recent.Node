@@ -1,8 +1,9 @@
+Sprite2D
+Parallax2D
 CollisionShape2D
 Label
 Node2D
 TileMapLayer
-Sprite2D
 Camera2D
 TextureRect
 AnimatedSprite2D
@@ -11,4 +12,3 @@ CharacterBody2D
 Button
 MarginContainer
 HBoxContainer
-VBoxContainer

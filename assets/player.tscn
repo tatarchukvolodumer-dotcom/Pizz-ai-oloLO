@@ -17,15 +17,15 @@ region = Rect2(1023, 0, 1023, 1304)
 atlas = ExtResource("1_insbl")
 region = Rect2(2046, 0, 1023, 1304)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_jeibo"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_rug40"]
 atlas = ExtResource("2_rug40")
 region = Rect2(2030, 0, 1015, 1316)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_cn88q"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_mxi64"]
 atlas = ExtResource("2_rug40")
 region = Rect2(0, 0, 1015, 1316)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_nknpd"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_jeibo"]
 atlas = ExtResource("2_rug40")
 region = Rect2(1015, 0, 1015, 1316)
 
@@ -71,17 +71,27 @@ animations = [{
 }, {
 "frames": [{
 "duration": 1.0,
-"texture": SubResource("AtlasTexture_jeibo")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_cn88q")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_nknpd")
+"texture": SubResource("AtlasTexture_rug40")
 }],
-"loop": true,
-"name": &"jump",
-"speed": 4.0
+"loop": false,
+"name": &"jump_end",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mxi64")
+}],
+"loop": false,
+"name": &"jump_in",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jeibo")
+}],
+"loop": false,
+"name": &"jump_start",
+"speed": 18.5
 }, {
 "frames": [{
 "duration": 1.0,
@@ -102,13 +112,13 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_cbn5g")
 }],
-"loop": true,
+"loop": false,
 "name": &"run",
 "speed": 10.0
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pt7v0"]
-size = Vector2(65, 92)
+size = Vector2(50, 88)
 
 [node name="Player" type="CharacterBody2D" unique_id=162535723]
 script = ExtResource("1_rug40")
@@ -116,9 +126,11 @@ script = ExtResource("1_rug40")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=684203194]
 scale = Vector2(0.08, 0.08)
 sprite_frames = SubResource("SpriteFrames_6kviw")
-animation = &"jump"
+animation = &"run"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=737074922]
-position = Vector2(0.5, -1)
+position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_pt7v0")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
