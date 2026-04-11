@@ -1,0 +1,75 @@
+[gd_scene format=3 uid="uid://f0oop2xx86qk"]
+
+[ext_resource type="Texture2D" uid="uid://bwy46trfojkrx" path="res://assets/tools/Knife (1).png" id="1_31tlu"]
+[ext_resource type="Script" uid="uid://dm2o8ajkwg42b" path="res://scripts/knife_horizontal.gd" id="1_hjlnd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_31tlu"]
+size = Vector2(124, 18)
+
+[sub_resource type="Animation" id="Animation_hjlnd"]
+length = 5.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5, 5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(415, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_mbr5v"]
+resource_name = "moving"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.5, 5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(-345, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hhytd"]
+_data = {
+&"RESET": SubResource("Animation_hjlnd"),
+&"moving": SubResource("Animation_mbr5v")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hjlnd"]
+size = Vector2(124, 18)
+
+[node name="knife_horizontal" type="Node2D" unique_id=1295700369]
+script = ExtResource("1_hjlnd")
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=1287274199]
+
+[node name="TextureRect" type="TextureRect" parent="AnimatableBody2D" unique_id=693161152]
+offset_top = 128.0
+offset_right = 128.0
+offset_bottom = 256.0
+rotation = -1.5707964
+texture = ExtResource("1_31tlu")
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=2099797183]
+position = Vector2(64, 61)
+shape = SubResource("RectangleShape2D_31tlu")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=821919026]
+libraries/ = SubResource("AnimationLibrary_hhytd")
+autoplay = &"moving"
+
+[node name="Area2D" type="Area2D" parent="AnimatableBody2D" unique_id=608588436]
+position = Vector2(64, 61)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D/Area2D" unique_id=1305457918]
+shape = SubResource("RectangleShape2D_hjlnd")
