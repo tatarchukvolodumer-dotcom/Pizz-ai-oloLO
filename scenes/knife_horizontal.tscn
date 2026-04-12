@@ -3,9 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://bwy46trfojkrx" path="res://assets/tools/Knife (1).png" id="1_31tlu"]
 [ext_resource type="Script" uid="uid://dm2o8ajkwg42b" path="res://scripts/knife_horizontal.gd" id="1_hjlnd"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_31tlu"]
-size = Vector2(124, 18)
-
 [sub_resource type="Animation" id="Animation_hjlnd"]
 length = 5.0
 tracks/0/type = "value"
@@ -47,6 +44,10 @@ _data = {
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hjlnd"]
 size = Vector2(124, 18)
 
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_hjlnd"]
+a = Vector2(541, 63)
+b = Vector2(4.3200073, 65)
+
 [node name="knife_horizontal" type="Node2D" unique_id=1295700369]
 script = ExtResource("1_hjlnd")
 
@@ -60,10 +61,6 @@ rotation = -1.5707964
 texture = ExtResource("1_31tlu")
 flip_h = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=2099797183]
-position = Vector2(64, 61)
-shape = SubResource("RectangleShape2D_31tlu")
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=821919026]
 libraries/ = SubResource("AnimationLibrary_hhytd")
 autoplay = &"moving"
@@ -73,3 +70,9 @@ position = Vector2(64, 61)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D/Area2D" unique_id=1305457918]
 shape = SubResource("RectangleShape2D_hjlnd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=241003056]
+light_mask = 0
+visibility_layer = 524288
+position = Vector2(-415, 2)
+shape = SubResource("SegmentShape2D_hjlnd")

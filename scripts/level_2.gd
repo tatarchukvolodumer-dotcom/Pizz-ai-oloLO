@@ -16,10 +16,10 @@ func _ready():
 	Fork.body_entered.connect(Callable(self, "_on_fork_entered"))
 	Knife_horizontal.body_entered.connect(Callable(self, "_on_knife_horizontal_entered"))
 	
-	Cam.limit_left = 96
-	Cam.limit_top = 175
-	Cam.limit_right = 2040
-	Cam.limit_bottom = 1005
+	Cam.limit_left = 305
+	Cam.limit_top = 405
+	Cam.limit_right = 2300
+	Cam.limit_bottom = 1250
 	
 	
 func _on_bottom_entered(body):

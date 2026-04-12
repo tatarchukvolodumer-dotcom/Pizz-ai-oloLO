@@ -3,9 +3,6 @@
 [ext_resource type="Texture2D" uid="uid://2qp0sce07rlt" path="res://assets/tools/Fork (2).png" id="1_5ebg1"]
 [ext_resource type="Script" uid="uid://kit6pfeh5w" path="res://scripts/fork.gd" id="1_6dqu0"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_6dqu0"]
-size = Vector2(40, 124)
-
 [sub_resource type="Animation" id="Animation_x2bp2"]
 length = 5.0
 tracks/0/type = "value"
@@ -45,7 +42,11 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x2bp2"]
-size = Vector2(40, 123)
+size = Vector2(40, 124)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_6dqu0"]
+a = Vector2(64, 0)
+b = Vector2(64, 425)
 
 [node name="fork" type="Node2D" unique_id=639737721]
 script = ExtResource("1_6dqu0")
@@ -57,10 +58,6 @@ offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_5ebg1")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableFork" unique_id=1595898924]
-position = Vector2(63, 64)
-shape = SubResource("RectangleShape2D_6dqu0")
-
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableFork" unique_id=1670703440]
 libraries/ = SubResource("AnimationLibrary_sxdky")
 autoplay = &"moving"
@@ -69,5 +66,8 @@ autoplay = &"moving"
 position = Vector2(64, 64)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableFork/Area2D" unique_id=521179474]
-position = Vector2(-1, 0.5)
+position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_x2bp2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1209832512]
+shape = SubResource("SegmentShape2D_6dqu0")

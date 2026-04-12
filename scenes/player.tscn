@@ -126,11 +126,19 @@ script = ExtResource("1_rug40")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=684203194]
 scale = Vector2(0.08, 0.08)
 sprite_frames = SubResource("SpriteFrames_6kviw")
-animation = &"run"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=737074922]
 position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_pt7v0")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1022863430]
+zoom = Vector2(2, 2)
+limit_left = 93
+limit_top = 192
+limit_right = 2045
+limit_bottom = 1120
+position_smoothing_speed = 2.2
 
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
