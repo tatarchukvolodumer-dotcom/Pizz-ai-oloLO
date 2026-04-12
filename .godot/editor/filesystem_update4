@@ -1,13 +1,4 @@
-res://scenes/knife_rotation.tscn
-res://scripts/knife_rotation.gd
-res://assets/level_1.tscn
-res://assets/level_3.tscn
-res://assets/level_2.tscn
-res://scenes/player.tscn
-res://scenes/level_1.tscn
-res://scenes/fork.tscn
-res://scenes/knife_horizontal.tscn
-res://scenes/plate_1.tscn
-res://scripts/level_1.gd
-res://scenes/level_2.tscn
-res://scenes/level_3.tscn
+res://scenes/main_menu.tscn
+res://scenes/saving_menu.tscn
+res://scenes/settings_menu.tscn
+res://scenes/chose_level_menu.tscn

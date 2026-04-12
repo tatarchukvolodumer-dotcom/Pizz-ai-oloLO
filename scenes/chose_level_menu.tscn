@@ -3,6 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://clomu3gll434a" path="res://images/фон_меню.png" id="1_c2q7r"]
 [ext_resource type="FontFile" uid="uid://cj7fwg0n6mvta" path="res://fonts/Playball-Regular.ttf" id="2_xuytu"]
 [ext_resource type="Texture2D" uid="uid://otoycn80hx8w" path="res://images/inactive_pizza.png" id="3_5jxb8"]
+[ext_resource type="Texture2D" uid="uid://b48qg5y265qnd" path="res://images/active_pizza.png" id="3_xuytu"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yqd5o"]
 bg_color = Color(0.32156864, 0.32156864, 0.32156864, 0.57254905)
@@ -56,7 +57,7 @@ corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
-[node name="Control" type="Control" unique_id=920780347]
+[node name="chose_level_menu" type="Control" unique_id=920780347]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -132,16 +133,50 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_71e6i")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ri6yo")
 text = "1"
 
-[node name="pizza1_1" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1" unique_id=1507311841]
-position = Vector2(39.25, 77.25)
+[node name="level1" type="HBoxContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1" unique_id=155044585]
+layout_mode = 0
+offset_left = 0.25
+offset_top = 55.25
+offset_right = 213.5
+offset_bottom = 104.5
+
+[node name="1_1" type="MarginContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1/level1" unique_id=283069427]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 2
+
+[node name="pizza1_1" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1/level1/1_1" unique_id=1782557684]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_xuytu")
+
+[node name="1_2" type="MarginContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1/level1" unique_id=1767621186]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 2
+
+[node name="pizza1_2" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1/level1/1_2" unique_id=1462309714]
+layout_mode = 2
+size_flags_horizontal = 3
 texture = ExtResource("3_5jxb8")
 
-[node name="pizza1_2" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1" unique_id=775401764]
-position = Vector2(102.25, 78.25)
-texture = ExtResource("3_5jxb8")
+[node name="1_3" type="MarginContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1/level1" unique_id=2061678620]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 2
 
-[node name="pizza1_3" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1" unique_id=261181098]
-position = Vector2(167.25, 78.25)
+[node name="pizza1_3" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1/level1/1_3" unique_id=2100863317]
+layout_mode = 2
+size_flags_horizontal = 3
 texture = ExtResource("3_5jxb8")
 
 [node name="level2_button" type="MarginContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer" unique_id=1516860164]
@@ -161,16 +196,50 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_71e6i")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ri6yo")
 text = "2"
 
-[node name="pizza2_1" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2" unique_id=416038030]
-position = Vector2(39.25, 77.25)
+[node name="level2" type="HBoxContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2" unique_id=74246385]
+layout_mode = 0
+offset_left = 0.25
+offset_top = 55.25
+offset_right = 213.5
+offset_bottom = 104.5
+
+[node name="2_1" type="MarginContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2/level2" unique_id=872439778]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 2
+
+[node name="pizza2_1" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2/level2/2_1" unique_id=395834533]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_xuytu")
+
+[node name="2_2" type="MarginContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2/level2" unique_id=655389605]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 2
+
+[node name="pizza2_2" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2/level2/2_2" unique_id=822320509]
+layout_mode = 2
+size_flags_horizontal = 3
 texture = ExtResource("3_5jxb8")
 
-[node name="pizza2_2" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2" unique_id=1574983713]
-position = Vector2(102.25, 78.25)
-texture = ExtResource("3_5jxb8")
+[node name="2_3" type="MarginContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2/level2" unique_id=426052432]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 2
 
-[node name="pizza2_3" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2" unique_id=1478121855]
-position = Vector2(167.25, 78.25)
+[node name="pizza2_3" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2/level2/2_3" unique_id=682815942]
+layout_mode = 2
+size_flags_horizontal = 3
 texture = ExtResource("3_5jxb8")
 
 [node name="level3_button" type="MarginContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer" unique_id=1366612690]
@@ -191,16 +260,50 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_ri6yo")
 text = "3
 "
 
-[node name="pizza3_1" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3" unique_id=929663951]
-position = Vector2(39.25, 77.25)
+[node name="level3" type="HBoxContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3" unique_id=723019051]
+layout_mode = 0
+offset_left = 0.25
+offset_top = 55.25
+offset_right = 213.5
+offset_bottom = 104.5
+
+[node name="3_1" type="MarginContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3/level3" unique_id=68776747]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 2
+
+[node name="pizza3_1" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3/level3/3_1" unique_id=1866686961]
+layout_mode = 2
+size_flags_horizontal = 3
+texture = ExtResource("3_xuytu")
+
+[node name="3_2" type="MarginContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3/level3" unique_id=609500778]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 2
+
+[node name="pizza3_2" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3/level3/3_2" unique_id=651937347]
+layout_mode = 2
+size_flags_horizontal = 3
 texture = ExtResource("3_5jxb8")
 
-[node name="pizza3_2" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3" unique_id=1367035310]
-position = Vector2(102.25, 78.25)
-texture = ExtResource("3_5jxb8")
+[node name="3_3" type="MarginContainer" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3/level3" unique_id=67189295]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 2
 
-[node name="pizza3_3" type="Sprite2D" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3" unique_id=903714980]
-position = Vector2(167.25, 78.25)
+[node name="pizza3_3" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3/level3/3_3" unique_id=590461790]
+layout_mode = 2
+size_flags_horizontal = 3
 texture = ExtResource("3_5jxb8")
 
 [node name="back_button" type="MarginContainer" parent="Panel/VBoxContainer" unique_id=1196255142]
