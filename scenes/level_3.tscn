@@ -1,12 +1,10 @@
 [gd_scene format=4 uid="uid://c0w8xgx23jsmq"]
 
+[ext_resource type="Script" uid="uid://2nawh5swvpyj" path="res://scripts/level_3.gd" id="1_ah8om"]
 [ext_resource type="Texture2D" uid="uid://qx8buuunomk6" path="res://images/фон_рівня.jpg" id="1_hhfj6"]
 [ext_resource type="Texture2D" uid="uid://btdixp1lrrmqo" path="res://assets/levels/Astolfo (1).png" id="2_wae8j"]
 [ext_resource type="Texture2D" uid="uid://cgxvb064nbyhj" path="res://assets/levels/Terrain (16x16).png" id="3_ha73p"]
 [ext_resource type="PackedScene" uid="uid://6hrchnootkup" path="res://scenes/player.tscn" id="4_vcx5n"]
-[ext_resource type="PackedScene" uid="uid://tw8vvlt1qhqg" path="res://assets/plate.tscn" id="5_56dhn"]
-[ext_resource type="PackedScene" uid="uid://7llj73374022" path="res://assets/fork.tscn" id="6_ax3dk"]
-[ext_resource type="PackedScene" uid="uid://djh8svubrasnu" path="res://assets/knife.tscn" id="7_q2dsb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nl6yy"]
 texture = ExtResource("2_wae8j")
@@ -255,6 +253,7 @@ sources/1 = SubResource("TileSetAtlasSource_nl6yy")
 size = Vector2(3254, 131)
 
 [node name="Level3" type="Node2D" unique_id=1920365779]
+script = ExtResource("1_ah8om")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1651847781]
 offset_left = 34.0
@@ -272,16 +271,7 @@ tile_set = SubResource("TileSet_wqq1k")
 [node name="Player" parent="." unique_id=162535723 instance=ExtResource("4_vcx5n")]
 position = Vector2(391, 979)
 
-[node name="Camera2D" type="Camera2D" parent="Player" unique_id=473195931]
-zoom = Vector2(2, 2)
-
 [node name="dev_marks" type="Node2D" parent="." unique_id=968669886]
-
-[node name="Plate" parent="dev_marks" unique_id=687918300 instance=ExtResource("5_56dhn")]
-position = Vector2(920, 1047)
-
-[node name="Fork" parent="dev_marks" unique_id=571234564 instance=ExtResource("6_ax3dk")]
-position = Vector2(692, 818)
 
 [node name="finish" type="Label" parent="dev_marks" unique_id=1781779616]
 offset_left = 427.0
@@ -298,45 +288,6 @@ offset_top = 696.0
 offset_right = 1831.0
 offset_bottom = 719.0
 text = "секрет"
-
-[node name="Fork2" parent="dev_marks" unique_id=731271340 instance=ExtResource("6_ax3dk")]
-position = Vector2(1651, 834)
-
-[node name="Fork3" parent="dev_marks" unique_id=590796927 instance=ExtResource("6_ax3dk")]
-position = Vector2(1186, 824)
-
-[node name="Knife4" parent="dev_marks" unique_id=1228029157 instance=ExtResource("7_q2dsb")]
-position = Vector2(747, 430)
-rotation = 1.5707964
-
-[node name="Knife5" parent="dev_marks" unique_id=2060458506 instance=ExtResource("7_q2dsb")]
-position = Vector2(778, 449)
-rotation = 1.5707964
-
-[node name="Knife6" parent="dev_marks" unique_id=1288069521 instance=ExtResource("7_q2dsb")]
-position = Vector2(830, 468)
-rotation = 1.5707964
-
-[node name="Plate2" parent="dev_marks" unique_id=1220315825 instance=ExtResource("5_56dhn")]
-position = Vector2(1466, 1052)
-
-[node name="Plate3" parent="dev_marks" unique_id=1185612224 instance=ExtResource("5_56dhn")]
-position = Vector2(1362, 515)
-
-[node name="Plate4" parent="dev_marks" unique_id=613153516 instance=ExtResource("5_56dhn")]
-position = Vector2(2685, 997)
-
-[node name="Knife7" parent="dev_marks" unique_id=1937480027 instance=ExtResource("7_q2dsb")]
-position = Vector2(2993, 976.00006)
-rotation = 1.134464
-scale = Vector2(-1, 1)
-
-[node name="Knife8" parent="dev_marks" unique_id=1949456680 instance=ExtResource("7_q2dsb")]
-position = Vector2(2022, 1065)
-rotation = -1.5707964
-
-[node name="Plate5" parent="dev_marks" unique_id=1715828493 instance=ExtResource("5_56dhn")]
-position = Vector2(2683, 842)
 
 [node name="Bottom" type="Area2D" parent="." unique_id=1197210787]
 position = Vector2(1798, 1280)

@@ -1,3 +1,4 @@
+CollisionShape2D
 MarginContainer
 HBoxContainer
 TextureRect
@@ -6,7 +7,6 @@ AnimatedSprite2D
 VBoxContainer
 Panel
 Label
-CollisionShape2D
 Area2D
 AnimationPlayer
 AnimatableBody2D
