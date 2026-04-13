@@ -1,10 +1,10 @@
-res://scenes/level_1.tscn
-res://scenes/player.tscn
-res://scenes/fork.tscn
-res://scenes/knife_horizontal.tscn
-res://scenes/level_2.tscn
 res://scenes/level_3.tscn
-res://scenes/plate_1.tscn
-res://scripts/level_1.gd
+res://scenes/level_2.tscn
 res://scripts/level_2.gd
+res://scenes/knife_rotation.tscn
+res://scenes/level_1.tscn
+res://scripts/player.gd
+res://scenes/player.tscn
+res://scripts/level_1.gd
 res://scripts/level_3.gd
+res://scenes/knife_horizontal.tscn
