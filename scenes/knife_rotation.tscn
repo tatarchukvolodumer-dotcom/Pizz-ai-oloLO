@@ -1,9 +1,7 @@
 [gd_scene format=3 uid="uid://bh8nhi3rxsn5n"]
 
 [ext_resource type="Texture2D" uid="uid://bwy46trfojkrx" path="res://assets/tools/Knife (1).png" id="1_80a6k"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_l575p"]
-size = Vector2(18, 123.5)
+[ext_resource type="Script" uid="uid://dhmv6sqj260io" path="res://scripts/knife_rotation.gd" id="1_l575p"]
 
 [sub_resource type="Animation" id="Animation_yeu8s"]
 loop_mode = 1
@@ -52,6 +50,7 @@ _data = {
 size = Vector2(18, 123)
 
 [node name="knife_rotation" type="Node2D" unique_id=1592895310]
+script = ExtResource("1_l575p")
 
 [node name="AnimatableBody2D" type="AnimatableBody2D" parent="." unique_id=1017679317]
 
@@ -62,10 +61,6 @@ offset_right = 66.99998
 offset_bottom = 2.0000153
 texture = ExtResource("1_80a6k")
 metadata/_edit_use_anchors_ = true
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D" unique_id=611882873]
-position = Vector2(-1.101527e-05, -63)
-shape = SubResource("RectangleShape2D_l575p")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatableBody2D" unique_id=522827838]
 libraries/ = SubResource("AnimationLibrary_yeu8s")

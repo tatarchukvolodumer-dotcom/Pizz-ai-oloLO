@@ -8,7 +8,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 # Початкова позиція плеєра (її можна встановити в будь-яку точку на рівні)
-var spawn_position = Vector2(434, 932)  # Наприклад, (100, 100) — початкова точка
+var spawn_position = Vector2(450, 900)  # Наприклад, (100, 100) — початкова точка
 
 func _ready():
 	# Підключаємо сигнал body_entered від телепортаційної зони до методу
@@ -20,22 +20,18 @@ func _ready():
 	Cam.limit_top = 175
 	Cam.limit_right = 2040
 	Cam.limit_bottom = 1005
-	
-	
+
 func _on_bottom_entered(body):
-	# Перевіряємо, чи це плеєр
-	if body == Player:  # Перевіряємо, чи цей об'єкт — плеєр
-		# Відновлюємо плеєра на початкову позицію
-		body.position = spawn_position
+	_death(body)
 		
 func _on_fork_entered(body):
-	# Перевіряємо, чи це плеєр
-	if body == Player:  # Перевіряємо, чи цей об'єкт — плеєр
-		# Відновлюємо плеєра на початкову позицію
-		body.position = spawn_position
+	_death(body)
 		
 func _on_knife_horizontal_entered(body):
+	_death(body)
+		
+func _death(body):
 	# Перевіряємо, чи це плеєр
-	if body == Player:  # Перевіряємо, чи цей об'єкт — плеєр
+	if body == Player and !Player.invinceble:  # Перевіряємо, чи цей об'єкт — плеєр
 		# Відновлюємо плеєра на початкову позицію
 		body.position = spawn_position

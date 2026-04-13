@@ -14,6 +14,7 @@ var jump_in = false
 #Індикатор подвійного стрибку
 var jump_double = true
 
+var invinceble = false
 #Базована функція
 func _physics_process(delta: float) -> void:
 	# Гравітація
@@ -54,6 +55,12 @@ func _physics_process(delta: float) -> void:
 		animated_sprite_2d.flip_h = false
 	if direction == -1.0:
 		animated_sprite_2d.flip_h = true
+	
+	if Input.is_action_just_pressed("invincible"):
+		if !invinceble:
+			invinceble = true
+		else:
+			invinceble = false
 
 func _on_animated_sprite_2d_animation_finished() -> void:
 	if animated_sprite_2d.animation == "jump_start":

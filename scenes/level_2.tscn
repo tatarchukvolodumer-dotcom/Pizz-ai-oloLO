@@ -6,7 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://cgxvb064nbyhj" path="res://assets/levels/Terrain (16x16).png" id="3_6cvei"]
 [ext_resource type="PackedScene" uid="uid://6hrchnootkup" path="res://scenes/player.tscn" id="4_que50"]
 [ext_resource type="PackedScene" uid="uid://c2qqhb3caquq7" path="res://scenes/plate.tscn" id="5_ne2mo"]
-[ext_resource type="PackedScene" uid="uid://d2d33v8iydn6l" path="res://scenes/fork.tscn" id="7_6cvei"]
 [ext_resource type="PackedScene" uid="uid://f0oop2xx86qk" path="res://scenes/knife_horizontal.tscn" id="8_que50"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nl6yy"]
@@ -302,31 +301,10 @@ tile_map_data = PackedByteArray("AAAKAD0ABQAHAAUAAAAKADwABQAHAAUAAAAKADsABQAHAAU
 tile_set = SubResource("TileSet_wqq1k")
 
 [node name="plate" parent="." unique_id=846427344 instance=ExtResource("5_ne2mo")]
-position = Vector2(1290, 892)
+position = Vector2(1210, 882)
 
 [node name="Player" parent="." unique_id=162535723 instance=ExtResource("4_que50")]
 position = Vector2(445, 932)
-
-[node name="fork" parent="." unique_id=639737721 instance=ExtResource("7_6cvei")]
-position = Vector2(1126, 1109)
-scale = Vector2(1, -1)
-
-[node name="fork2" parent="." unique_id=797911339 instance=ExtResource("7_6cvei")]
-position = Vector2(876, 1117)
-scale = Vector2(1, -1)
-
-[node name="fork3" parent="." unique_id=1774332744 instance=ExtResource("7_6cvei")]
-position = Vector2(608, 1113)
-scale = Vector2(1, -1)
-
-[node name="fork4" parent="." unique_id=645472497 instance=ExtResource("7_6cvei")]
-position = Vector2(1200, 516)
-
-[node name="fork5" parent="." unique_id=1206938528 instance=ExtResource("7_6cvei")]
-position = Vector2(1404, 586)
-
-[node name="fork6" parent="." unique_id=1999671933 instance=ExtResource("7_6cvei")]
-position = Vector2(1635, 631)
 
 [node name="knife_horizontal" parent="." unique_id=1295700369 instance=ExtResource("8_que50")]
 position = Vector2(1877, 852)
