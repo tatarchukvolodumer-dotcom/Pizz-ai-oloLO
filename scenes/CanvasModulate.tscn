@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://cyrfel0aacjd3"]
+
+[ext_resource type="Script" uid="uid://b565t685k02xx" path="res://scripts/canvas_modulate.gd" id="1_sux34"]
+
+[node name="CanvasModulate" type="CanvasModulate" unique_id=93682476]
+script = ExtResource("1_sux34")

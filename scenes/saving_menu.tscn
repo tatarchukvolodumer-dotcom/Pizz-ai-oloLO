@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://u1144absegmx"]
 
 [ext_resource type="Texture2D" uid="uid://clomu3gll434a" path="res://images/фон_меню.png" id="1_f4u1l"]
+[ext_resource type="Script" uid="uid://ck28yo3jhruqy" path="res://scripts/saving_menu.gd" id="1_sxxnq"]
 [ext_resource type="FontFile" uid="uid://cj7fwg0n6mvta" path="res://fonts/Playball-Regular.ttf" id="2_sxxnq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f4u1l"]
@@ -80,11 +81,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_sxxnq")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1137220904]
-layout_mode = 0
-offset_right = 1155.0
-offset_bottom = 651.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_f4u1l")
 expand_mode = 1
 
@@ -138,7 +143,7 @@ theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 5
 
-[node name="Button" type="Button" parent="Panel/VBoxContainer/MarginContainer2" unique_id=683525792]
+[node name="saving1" type="Button" parent="Panel/VBoxContainer/MarginContainer2" unique_id=683525792]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_colors/font_color = Color(1, 1, 1, 1)
@@ -159,7 +164,7 @@ theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 5
 
-[node name="Button" type="Button" parent="Panel/VBoxContainer/MarginContainer3" unique_id=930080120]
+[node name="saving2" type="Button" parent="Panel/VBoxContainer/MarginContainer3" unique_id=930080120]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
@@ -179,7 +184,7 @@ theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 5
 
-[node name="Button" type="Button" parent="Panel/VBoxContainer/MarginContainer4" unique_id=1770824619]
+[node name="saving3" type="Button" parent="Panel/VBoxContainer/MarginContainer4" unique_id=1770824619]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
@@ -199,7 +204,7 @@ theme_override_constants/margin_top = 5
 theme_override_constants/margin_right = 50
 theme_override_constants/margin_bottom = 5
 
-[node name="Button" type="Button" parent="Panel/VBoxContainer/MarginContainer5" unique_id=1644201992]
+[node name="Back" type="Button" parent="Panel/VBoxContainer/MarginContainer5" unique_id=1644201992]
 layout_mode = 2
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)

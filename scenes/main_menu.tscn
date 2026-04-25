@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://fy2d1iuwp8c7"]
 
+[ext_resource type="Script" uid="uid://ce3raeq3tdl73" path="res://scripts/main_menu.gd" id="1_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://clomu3gll434a" path="res://images/фон_меню.png" id="1_ekxnf"]
 [ext_resource type="FontFile" uid="uid://cj7fwg0n6mvta" path="res://fonts/Playball-Regular.ttf" id="2_bqqt6"]
 
@@ -59,11 +60,15 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_bqqt6")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1822286514]
-layout_mode = 0
-offset_right = 1154.0
-offset_bottom = 650.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 texture = ExtResource("1_ekxnf")
 expand_mode = 1
 

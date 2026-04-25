@@ -6,8 +6,11 @@
 [ext_resource type="Texture2D" uid="uid://cgxvb064nbyhj" path="res://assets/levels/Terrain (16x16).png" id="3_e3sih"]
 [ext_resource type="PackedScene" uid="uid://6hrchnootkup" path="res://scenes/player.tscn" id="4_2y5yt"]
 [ext_resource type="PackedScene" uid="uid://f0oop2xx86qk" path="res://scenes/knife_horizontal.tscn" id="6_go7sj"]
+[ext_resource type="PackedScene" uid="uid://b6b8rqcsclw4u" path="res://scenes/timer_scene.tscn" id="7_2y5yt"]
 [ext_resource type="PackedScene" uid="uid://d2d33v8iydn6l" path="res://scenes/fork.tscn" id="8_15mv3"]
 [ext_resource type="PackedScene" uid="uid://c2qqhb3caquq7" path="res://scenes/plate.tscn" id="8_e3sih"]
+[ext_resource type="PackedScene" uid="uid://2bj8jhtgc3ea" path="res://scenes/oven.tscn" id="9_e3sih"]
+[ext_resource type="Texture2D" uid="uid://degwl6xu8xx81" path="res://images/pizza_1.png" id="11_2os1m"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_nl6yy"]
 texture = ExtResource("2_15mv3")
@@ -255,6 +258,9 @@ sources/1 = SubResource("TileSetAtlasSource_nl6yy")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2y5yt"]
 size = Vector2(1958.5, 56)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2os1m"]
+size = Vector2(64, 60)
+
 [node name="Level1" type="Node2D" unique_id=1920365779]
 script = ExtResource("1_e3sih")
 
@@ -277,6 +283,12 @@ position = Vector2(923, 822)
 
 [node name="Player" parent="." unique_id=162535723 instance=ExtResource("4_2y5yt")]
 position = Vector2(434, 932)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="Player" unique_id=808112416]
+
+[node name="Timer_scene" parent="Player/CanvasLayer" unique_id=45147885 instance=ExtResource("7_2y5yt")]
+Dseconds = 30
+Dminutes = 1
 
 [node name="dev_marks" type="Node2D" parent="." unique_id=968669886]
 
@@ -308,3 +320,23 @@ position = Vector2(1065, 1132)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Bottom" unique_id=1361754993]
 position = Vector2(7.75, -1)
 shape = SubResource("RectangleShape2D_2y5yt")
+
+[node name="oven" parent="." unique_id=586987638 instance=ExtResource("9_e3sih")]
+position = Vector2(1972, 955)
+
+[node name="secret" type="Node2D" parent="." unique_id=969012415]
+
+[node name="TextureRect" type="TextureRect" parent="secret" unique_id=1854352464]
+offset_left = 992.0
+offset_top = 564.0
+offset_right = 1042.0
+offset_bottom = 614.0
+texture = ExtResource("11_2os1m")
+expand_mode = 1
+
+[node name="Area2D" type="Area2D" parent="secret" unique_id=1195648682]
+position = Vector2(991, 562)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="secret/Area2D" unique_id=1347438059]
+position = Vector2(26, 32)
+shape = SubResource("RectangleShape2D_2os1m")

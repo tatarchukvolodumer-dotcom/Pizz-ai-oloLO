@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://hybqodsxowu4"]
 
 [ext_resource type="Texture2D" uid="uid://clomu3gll434a" path="res://images/фон_меню.png" id="1_8exxq"]
+[ext_resource type="Script" uid="uid://cg4olojjf5fj5" path="res://scripts/settings_menu.gd" id="1_jrqig"]
 [ext_resource type="FontFile" uid="uid://cj7fwg0n6mvta" path="res://fonts/Playball-Regular.ttf" id="2_y500u"]
 [ext_resource type="PackedScene" uid="uid://bn46xxea1n76f" path="res://scenes/scroll_bar.tscn" id="3_y500u"]
 [ext_resource type="Script" uid="uid://q4bwi1f6mal2" path="res://scripts/screen_resolution.gd" id="4_0uf7w"]
@@ -8,8 +9,6 @@
 [ext_resource type="Texture2D" uid="uid://bqyw4c6albbyx" path="res://images/button_right.png" id="5_nq5hj"]
 [ext_resource type="Script" uid="uid://dpabr02ucxmgi" path="res://scripts/display_mode.gd" id="7_yc6ve"]
 [ext_resource type="Script" uid="uid://dmabbof053vwx" path="res://scripts/fps_lock.gd" id="8_366j8"]
-[ext_resource type="Texture2D" uid="uid://dmr5x8ttliksp" path="res://images/radio_button_mark.png" id="9_b0jo3"]
-[ext_resource type="Script" uid="uid://cs6ggkxamhpu1" path="res://scripts/fps_radio_button.gd" id="10_b0jo3"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_81yt0"]
 bg_color = Color(0.2036809, 0.20368093, 0.20368093, 0.6627451)
@@ -22,30 +21,6 @@ corner_radius_bottom_left = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yc6ve"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0uf7w"]
-bg_color = Color(1, 0.9843137, 0.7764706, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(1, 0.5882353, 0.011764706, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ghgay"]
-bg_color = Color(1, 0.9843137, 0.7764706, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(1, 0.5882353, 0.011764706, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mwna3"]
-bg_color = Color(1, 0.9843137, 0.7764706, 1)
-border_width_left = 5
-border_width_top = 5
-border_width_right = 5
-border_width_bottom = 5
-border_color = Color(1, 0.5882353, 0.011764706, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8exxq"]
 bg_color = Color(0, 0, 0, 1)
@@ -103,6 +78,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_jrqig")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1513202832]
 layout_mode = 1
@@ -194,6 +170,20 @@ text = "Music Volume"
 horizontal_alignment = 2
 vertical_alignment = 1
 
+[node name="SFX" type="MarginContainer" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/setting_item/VBoxContainer" unique_id=1365547096]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_right = 40
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/setting_item/VBoxContainer/SFX" unique_id=1981856801]
+layout_mode = 2
+size_flags_vertical = 1
+theme_override_fonts/font = ExtResource("2_y500u")
+theme_override_font_sizes/font_size = 38
+text = "SFX"
+horizontal_alignment = 2
+vertical_alignment = 1
+
 [node name="screen_resolution" type="MarginContainer" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/setting_item/VBoxContainer" unique_id=1843388196]
 layout_mode = 2
 size_flags_vertical = 3
@@ -250,19 +240,6 @@ text = "FPS Lock"
 horizontal_alignment = 2
 vertical_alignment = 1
 
-[node name="sensitivity" type="MarginContainer" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/setting_item/VBoxContainer" unique_id=1146881797]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_constants/margin_right = 40
-
-[node name="Label" type="Label" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/setting_item/VBoxContainer/sensitivity" unique_id=1412440068]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_y500u")
-theme_override_font_sizes/font_size = 38
-text = "Sensitivity"
-horizontal_alignment = 2
-vertical_alignment = 1
-
 [node name="values" type="MarginContainer" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer" unique_id=446015587]
 layout_mode = 2
 size_flags_horizontal = 3
@@ -276,7 +253,7 @@ size_flags_vertical = 3
 theme_override_constants/margin_left = 30
 theme_override_constants/margin_top = 15
 
-[node name="slider" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/values/VBoxContainer/v_master_volume" unique_id=662988858 instance=ExtResource("3_y500u")]
+[node name="master_volume_slider" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/values/VBoxContainer/v_master_volume" unique_id=662988858 instance=ExtResource("3_y500u")]
 layout_mode = 2
 
 [node name="v_music_volume" type="MarginContainer" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/values/VBoxContainer" unique_id=1075068224]
@@ -285,7 +262,16 @@ size_flags_vertical = 3
 theme_override_constants/margin_left = 30
 theme_override_constants/margin_top = 15
 
-[node name="slider" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/values/VBoxContainer/v_music_volume" unique_id=223986678 instance=ExtResource("3_y500u")]
+[node name="music_volume_slider" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/values/VBoxContainer/v_music_volume" unique_id=223986678 instance=ExtResource("3_y500u")]
+layout_mode = 2
+
+[node name="v_SFX_volume" type="MarginContainer" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/values/VBoxContainer" unique_id=1234126990]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 15
+
+[node name="SFX_volume_slider" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/values/VBoxContainer/v_SFX_volume" unique_id=1491336201 instance=ExtResource("3_y500u")]
 layout_mode = 2
 
 [node name="v_screen_resolution" type="MarginContainer" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/values/VBoxContainer" unique_id=2129700087]
@@ -360,7 +346,7 @@ size_flags_vertical = 3
 theme_override_constants/margin_left = 30
 theme_override_constants/margin_top = 15
 
-[node name="slider" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/values/VBoxContainer/v_brightness" unique_id=1188393936 instance=ExtResource("3_y500u")]
+[node name="brightness_slider" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/values/VBoxContainer/v_brightness" unique_id=1188393936 instance=ExtResource("3_y500u")]
 layout_mode = 2
 
 [node name="v_fps_lock" type="MarginContainer" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/values/VBoxContainer" unique_id=774149883]
@@ -405,34 +391,6 @@ size_flags_horizontal = 10
 theme_override_styles/normal = SubResource("StyleBoxFlat_yc6ve")
 icon = ExtResource("5_nq5hj")
 icon_alignment = 1
-
-[node name="MarginContainer2" type="MarginContainer" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/values/VBoxContainer/v_fps_lock/HBoxContainer" unique_id=1963479657]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/margin_left = 25
-theme_override_constants/margin_right = 13
-
-[node name="fps_radio_button" type="Button" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/values/VBoxContainer/v_fps_lock/HBoxContainer/MarginContainer2" unique_id=1800173003 node_paths=PackedStringArray("label_color", "left_icon", "right_icon")]
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_styles/normal = SubResource("StyleBoxFlat_0uf7w")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_ghgay")
-theme_override_styles/hover = SubResource("StyleBoxFlat_mwna3")
-icon = ExtResource("9_b0jo3")
-icon_alignment = 1
-script = ExtResource("10_b0jo3")
-label_color = NodePath("../../MarginContainer/fps_lock/Label")
-left_icon = NodePath("../../MarginContainer/fps_lock/Button_left")
-right_icon = NodePath("../../MarginContainer/fps_lock/Button_right")
-
-[node name="v_sensitivity" type="MarginContainer" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/values/VBoxContainer" unique_id=1369256999]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_constants/margin_left = 30
-theme_override_constants/margin_top = 15
-
-[node name="slider" parent="Panel/VBoxContainer/MarginContainer2/HBoxContainer/values/VBoxContainer/v_sensitivity" unique_id=785154433 instance=ExtResource("3_y500u")]
-layout_mode = 2
 
 [node name="MarginContainer3" type="MarginContainer" parent="Panel/VBoxContainer" unique_id=605472896]
 layout_mode = 2

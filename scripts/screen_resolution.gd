@@ -1,11 +1,20 @@
 extends HBoxContainer
 
+signal resolution_changed(resolution)
+
 @onready var button_left = $Button_left
 @onready var button_right = $Button_right
 @onready var label_value = $Label
 
-var options = ["640 x 480", "1280 x 720", "1920 x 1080", "2560 x 1440", "3480 x 2160"]
-var current_index = 0
+var options = [
+	Vector2i(640, 480),
+	Vector2i(1280, 720),
+	Vector2i(1920, 1080),
+	Vector2i(2560, 1440),
+	Vector2i(3480, 2160)
+]
+
+@export var current_index = 0
 
 func _ready():
 	update_label()
@@ -15,10 +24,17 @@ func _ready():
 func _on_left_pressed():
 	current_index = (current_index - 1 + options.size()) % options.size()
 	update_label()
+	emit_resolution()
 
 func _on_right_pressed():
 	current_index = (current_index + 1) % options.size()
 	update_label()
+	emit_resolution()
 
 func update_label():
-	label_value.text = options[current_index]
+	var res = options[current_index]
+	label_value.text = str(res.x) + " x " + str(res.y)
+
+func emit_resolution():
+	var res = options[current_index]
+	resolution_changed.emit(res)

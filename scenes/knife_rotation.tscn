@@ -71,3 +71,4 @@ autoplay = &"RESET"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D/Area2D" unique_id=2044103992]
 position = Vector2(0, -62.5)
 shape = SubResource("RectangleShape2D_80a6k")
+disabled = true

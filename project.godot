@@ -11,9 +11,20 @@ config_version=5
 [application]
 
 config/name="Pizz-ai`o;oLO"
-run/main_scene="uid://6hrchnootkup"
+run/main_scene="uid://fy2d1iuwp8c7"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[audio]
+
+buses/default_bus_layout="uid://dlono1w27nl6p"
+
+[autoload]
+
+SceneManager="*uid://bagc4jv4nnkoe"
+SettingsManager="*uid://crwmknnpo51ft"
+GlobalCanvasModulate="*uid://cyrfel0aacjd3"
+AudioManager="*uid://cn2hxghdhfcic"
 
 [input]
 

@@ -68,6 +68,7 @@ position = Vector2(64, 64)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableFork/Area2D" unique_id=521179474]
 position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_x2bp2")
+disabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1209832512]
 shape = SubResource("SegmentShape2D_6dqu0")

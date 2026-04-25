@@ -19,8 +19,3 @@ func pressing():
 		label_color.add_theme_color_override("font_color", Color.html("#FF9603"))
 		left_icon.icon = load("res://images/button_left.png")
 		right_icon.icon = load("res://images/button_right.png")
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass

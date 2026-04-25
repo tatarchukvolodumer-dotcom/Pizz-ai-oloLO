@@ -4,8 +4,14 @@ extends Node2D
 @onready var Fork = load("res://scenes/fork.tscn")
 @onready var Knife_r = load("res://scenes/knife_rotation.tscn")
 @onready var Knife_horizontal = $knife_horizontal/AnimatableBody2D/Area2D
+@onready var Oven_area = $oven/Area2D
+@onready var oven_animation = $oven/AnimatedSprite2D
 
 @onready var Cam = $Player/Camera2D
+
+@onready var timer = $Player/CanvasLayer/Timer_scene
+@onready var secret = $secret/Area2D
+@onready var secret_texture = $secret/TextureRect
 
 var fork_positions = [
 	Vector2(876, 1120),
@@ -26,6 +32,11 @@ var knife_r_position = [
 var spawn_position = Vector2(450, 900)  # Наприклад, (100, 100) — початкова точка
 
 func _ready():
+	SceneManager.level2_success = 0
+	SceneManager.level2_success +=1
+	secret_texture.texture = load("res://images/pizza_2.png")
+	SceneManager.current_scene_path = "res://scenes/level_2.tscn"
+	
 	for pos in fork_positions:
 		var instance = Fork.instantiate()
 		instance.position = pos
@@ -43,12 +54,39 @@ func _ready():
 	# Підключаємо сигнал body_entered від телепортаційної зони до методу
 	Bottom.body_entered.connect(Callable(self, "_on_bottom_entered"))# Сигнал спрацьовує, коли плеєр входить в телепортаційну зону
 	Knife_horizontal.body_entered.connect(Callable(self, "_on_knife_horizontal_entered"))
+	Oven_area.body_entered.connect(Callable(self, "_on_oven_entered"))
+	secret.body_entered.connect(Callable(self, "_on_secret_entered"))
 	
 	Cam.limit_left = 305
 	Cam.limit_top = 405
 	Cam.limit_right = 2300
 	Cam.limit_bottom = 1250
+
+func _process(delta):
+	if timer.minutes == 0 and timer.seconds == 0:
+		if oven_animation.animation != "unsuccess":
+			oven_animation.play("unsuccess")
+	else:
+		if oven_animation.animation != "success":
+			oven_animation.play("success")
 	
+func _on_secret_entered(body):
+	if body.name == "Player" and secret_texture.texture != null:
+		AudioManager.sfx_play("secret")
+		secret_texture.texture = null
+		SceneManager.level2_success += 1
+		print(SceneManager.level2_success)
+	
+func _on_oven_entered(body):
+	if body.name == "Player":
+		AudioManager.sfx_play("win")
+		if timer.minutes != 0 or timer.seconds !=0:
+			SceneManager.level2_success +=1
+		print(SceneManager.level2_success)
+		SceneManager.previous_scene_path = SceneManager.current_scene_path
+		get_tree().call_deferred("change_scene_to_file", "res://scenes/level_finished_menu.tscn")
+		SceneManager.current_scene_path = "res://scenes/level_finished_menu.tscn"
+		AudioManager.music_play()
 	
 func _on_bottom_entered(body):
 	_death(body)
@@ -62,5 +100,8 @@ func _on_knife_horizontal_entered(body):
 func _death(body):
 	# Перевіряємо, чи це плеєр
 	if body == Player and !Player.invinceble:  # Перевіряємо, чи цей об'єкт — плеєр
+		AudioManager.sfx_play("death")
 		# Відновлюємо плеєра на початкову позицію
 		body.position = spawn_position
+		secret_texture.texture = load("res://images/pizza_2.png")
+		SceneManager.level2_success = 1

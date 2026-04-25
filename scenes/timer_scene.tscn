@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://b6b8rqcsclw4u"]
+
+[ext_resource type="Script" uid="uid://bfsoyvjubogkx" path="res://scripts/timer_scene.gd" id="1_2ntfi"]
+[ext_resource type="FontFile" uid="uid://cj7fwg0n6mvta" path="res://fonts/Playball-Regular.ttf" id="2_f5wsn"]
+
+[node name="Timer_scene" type="Control" unique_id=45147885]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2ntfi")
+
+[node name="Timer" type="Timer" parent="." unique_id=297341268]
+autostart = true
+
+[node name="Label" type="Label" parent="." unique_id=1424197420]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -171.5
+offset_right = 171.5
+offset_bottom = 91.0
+grow_horizontal = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_f5wsn")
+theme_override_font_sizes/font_size = 45
+horizontal_alignment = 1
+vertical_alignment = 1

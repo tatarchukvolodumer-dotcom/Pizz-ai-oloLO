@@ -17,6 +17,9 @@ var jump_double = true
 var invinceble = false
 #Базована функція
 func _physics_process(delta: float) -> void:
+	
+	direction = Input.get_axis("left", "right")
+	
 	# Гравітація
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -24,10 +27,12 @@ func _physics_process(delta: float) -> void:
 			return
 		else:
 			animated_sprite_2d.play("jump_in")
+			jump_in = true
 	
 	if is_on_floor():
 		if jump_in:
 			animated_sprite_2d.play("jump_end")
+			AudioManager.sfx_play("hit")
 		elif direction:
 			animated_sprite_2d.play("run")
 		else:
@@ -39,15 +44,17 @@ func _physics_process(delta: float) -> void:
 		jump_start = true
 		if not is_on_floor():
 			jump_double = false
+			AudioManager.sfx_play("jump2")
+		else:
+			AudioManager.sfx_play("jump")
 	
 	#Рух туди і сюди
-	direction = Input.get_axis("left", "right")
+	
 	if direction:
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-	
-	#А чорт його зна
+
 	move_and_slide()
 	
 	#Поворт тудим і сюдим

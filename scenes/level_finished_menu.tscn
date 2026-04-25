@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bslule6ch4ou7"]
 
 [ext_resource type="Texture2D" uid="uid://clomu3gll434a" path="res://images/фон_меню.png" id="1_btqtn"]
+[ext_resource type="Script" uid="uid://de3nl7spdfn0" path="res://scripts/level_finished_menu.gd" id="1_srg4m"]
 [ext_resource type="FontFile" uid="uid://cj7fwg0n6mvta" path="res://fonts/Playball-Regular.ttf" id="2_srg4m"]
-[ext_resource type="Texture2D" uid="uid://d2jas8cdcfwse" path="res://images/pizza_success_finished_level.png" id="3_hjwrq"]
 [ext_resource type="Texture2D" uid="uid://xrs5eefyjry" path="res://images/pizza_unsuccess_finished_level.png" id="4_vib2s"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0laes"]
@@ -32,6 +32,13 @@ corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_btqtn"]
+bg_color = Color(0.2509804, 0.2509804, 0.2509804, 0.7137255)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
 [node name="Level_finished_menu" type="Control" unique_id=1529388503]
 layout_mode = 3
 anchors_preset = 15
@@ -39,6 +46,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_srg4m")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=600332528]
 layout_mode = 1
@@ -94,10 +102,10 @@ size_flags_horizontal = 3
 theme_override_constants/margin_left = 24
 theme_override_constants/margin_right = 24
 
-[node name="TextureRect" type="TextureRect" parent="Panel/HBoxContainer1/MarginContainer" unique_id=1265515672]
+[node name="pizza1" type="TextureRect" parent="Panel/HBoxContainer1/MarginContainer" unique_id=1265515672]
 layout_mode = 2
 size_flags_horizontal = 3
-texture = ExtResource("3_hjwrq")
+texture = ExtResource("4_vib2s")
 
 [node name="MarginContainer2" type="MarginContainer" parent="Panel/HBoxContainer1" unique_id=1770040404]
 layout_mode = 2
@@ -105,7 +113,7 @@ size_flags_horizontal = 3
 theme_override_constants/margin_left = 24
 theme_override_constants/margin_right = 24
 
-[node name="TextureRect2" type="TextureRect" parent="Panel/HBoxContainer1/MarginContainer2" unique_id=1680888376]
+[node name="pizza2" type="TextureRect" parent="Panel/HBoxContainer1/MarginContainer2" unique_id=1680888376]
 layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("4_vib2s")
@@ -116,7 +124,7 @@ size_flags_horizontal = 3
 theme_override_constants/margin_left = 24
 theme_override_constants/margin_right = 24
 
-[node name="TextureRect3" type="TextureRect" parent="Panel/HBoxContainer1/MarginContainer3" unique_id=706367093]
+[node name="pizza3" type="TextureRect" parent="Panel/HBoxContainer1/MarginContainer3" unique_id=706367093]
 layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("4_vib2s")
@@ -134,6 +142,20 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_dxe0y")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ayhsw")
 text = "Back"
 
+[node name="Retry_Button" type="Button" parent="Panel" unique_id=982918915]
+layout_mode = 0
+offset_left = 303.5
+offset_top = 388.0
+offset_right = 511.5
+offset_bottom = 468.0
+theme_override_fonts/font = ExtResource("2_srg4m")
+theme_override_font_sizes/font_size = 45
+theme_override_styles/normal = SubResource("StyleBoxFlat_76xo5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dxe0y")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ayhsw")
+text = "Retry
+"
+
 [node name="Next_Button" type="Button" parent="Panel" unique_id=2080983267]
 layout_mode = 0
 offset_left = 607.5
@@ -145,4 +167,5 @@ theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_76xo5")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_dxe0y")
 theme_override_styles/hover = SubResource("StyleBoxFlat_ayhsw")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_btqtn")
 text = "Next"

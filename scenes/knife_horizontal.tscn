@@ -70,6 +70,7 @@ position = Vector2(64, 61)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D/Area2D" unique_id=1305457918]
 shape = SubResource("RectangleShape2D_hjlnd")
+disabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=241003056]
 light_mask = 0
