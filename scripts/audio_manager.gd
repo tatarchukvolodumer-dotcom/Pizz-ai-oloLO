@@ -1,7 +1,8 @@
 extends Node2D
 
 @onready var music = $music
-@onready var sfx = $sfx
+@onready var sfx1 = $sfx1
+@onready var sfx2 = $sfx2
 
 var level_music = preload("res://Sound/Sound/Musik/level.ogg")
 var menu_music = preload("res://Sound/Sound/Musik/main_menu.ogg")
@@ -27,17 +28,20 @@ func music_play() -> void:
 	elif not music.playing:
 		music.play()
 
-func sfx_play(effect: String) -> void:
+func sfx1_play(effect: String) -> void:
 	if effect == "jump":
-		sfx.stream = preload("res://Sound/Sound/Effects/jump_1.wav")
+		sfx1.stream = preload("res://Sound/Sound/Effects/jump_1.wav")
 	elif effect == "jump2":
-		sfx.stream = preload("res://Sound/Sound/Effects/jump_2.wav")
-	elif effect == "win":
-		sfx.stream = load("res://Sound/Sound/Effects/win.wav")
+		sfx1.stream = preload("res://Sound/Sound/Effects/jump_2.wav")
 	elif effect == "hit":
-		sfx.stream = load("res://Sound/Sound/Effects/hit_1.wav")
+		sfx1.stream = load("res://Sound/Sound/Effects/hit_1.wav")
 	elif effect == "death":
-		sfx.stream = load("res://Sound/Sound/Effects/death.wav")
+		sfx1.stream = load("res://Sound/Sound/Effects/death.wav")
+	sfx1.play()
+
+func sfx2_play(effect: String) -> void:
+	if effect == "win":
+		sfx2.stream = load("res://Sound/Sound/Effects/win.wav")
 	elif effect == "secret":
-		sfx.stream = load("res://Sound/Sound/Effects/secret.wav")
-	sfx.play()
+		sfx2.stream = load("res://Sound/Sound/Effects/secret.wav")
+	sfx2.play()

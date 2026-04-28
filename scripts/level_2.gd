@@ -72,14 +72,14 @@ func _process(delta):
 	
 func _on_secret_entered(body):
 	if body.name == "Player" and secret_texture.texture != null:
-		AudioManager.sfx_play("secret")
+		AudioManager.sfx2_play("secret")
 		secret_texture.texture = null
 		SceneManager.level2_success += 1
 		print(SceneManager.level2_success)
 	
 func _on_oven_entered(body):
 	if body.name == "Player":
-		AudioManager.sfx_play("win")
+		AudioManager.sfx2_play("win")
 		if timer.minutes != 0 or timer.seconds !=0:
 			SceneManager.level2_success +=1
 		print(SceneManager.level2_success)
@@ -100,7 +100,7 @@ func _on_knife_horizontal_entered(body):
 func _death(body):
 	# Перевіряємо, чи це плеєр
 	if body == Player and !Player.invinceble:  # Перевіряємо, чи цей об'єкт — плеєр
-		AudioManager.sfx_play("death")
+		AudioManager.sfx1_play("death")
 		# Відновлюємо плеєра на початкову позицію
 		body.position = spawn_position
 		secret_texture.texture = load("res://images/pizza_2.png")

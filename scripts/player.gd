@@ -32,7 +32,7 @@ func _physics_process(delta: float) -> void:
 	if is_on_floor():
 		if jump_in:
 			animated_sprite_2d.play("jump_end")
-			AudioManager.sfx_play("hit")
+			AudioManager.sfx1_play("hit")
 		elif direction:
 			animated_sprite_2d.play("run")
 		else:
@@ -44,9 +44,9 @@ func _physics_process(delta: float) -> void:
 		jump_start = true
 		if not is_on_floor():
 			jump_double = false
-			AudioManager.sfx_play("jump2")
+			AudioManager.sfx1_play("jump2")
 		else:
-			AudioManager.sfx_play("jump")
+			AudioManager.sfx1_play("jump")
 	
 	#Рух туди і сюди
 	

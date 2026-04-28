@@ -1,12 +1,8 @@
-res://scenes/player.tscn
-res://scripts/player.gd
-res://scripts/audio_manager.gd
-res://scenes/level_2.tscn
+res://scenes/knife_rotation.tscn
 res://scenes/audio_manager.tscn
-res://scenes/oven.tscn
+res://scripts/audio_manager.gd
 res://scripts/level_1.gd
-res://scenes/level_1.tscn
 res://scripts/level_2.gd
 res://scripts/level_3.gd
-res://scenes/level_finished_menu.tscn
-res://scenes/level_3.tscn
+res://scripts/player.gd
+res://scenes/fork.tscn

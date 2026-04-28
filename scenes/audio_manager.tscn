@@ -8,5 +8,8 @@ script = ExtResource("1_8qd8g")
 [node name="music" type="AudioStreamPlayer" parent="." unique_id=26569895]
 bus = &"Music"
 
-[node name="sfx" type="AudioStreamPlayer" parent="." unique_id=789913530]
+[node name="sfx1" type="AudioStreamPlayer" parent="." unique_id=789913530]
+bus = &"SFX"
+
+[node name="sfx2" type="AudioStreamPlayer" parent="." unique_id=1251556416]
 bus = &"SFX"
