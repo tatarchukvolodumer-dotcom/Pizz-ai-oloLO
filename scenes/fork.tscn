@@ -62,13 +62,12 @@ texture = ExtResource("1_5ebg1")
 libraries/ = SubResource("AnimationLibrary_sxdky")
 autoplay = &"moving"
 
-[node name="Area2D" type="Area2D" parent="AnimatableFork" unique_id=1899578004]
+[node name="Area2D" type="Area2D" parent="AnimatableFork" unique_id=1899578004 groups=["_death_area"]]
 position = Vector2(64, 64)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableFork/Area2D" unique_id=521179474]
 position = Vector2(-1, 0)
 shape = SubResource("RectangleShape2D_x2bp2")
-disabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1209832512]
 shape = SubResource("SegmentShape2D_6dqu0")

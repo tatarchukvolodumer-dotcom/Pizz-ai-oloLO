@@ -1,6 +1,8 @@
 extends CharacterBody2D
 @onready var animated_sprite_2d: AnimatedSprite2D=$AnimatedSprite2D
 
+@onready var Cam = $Camera2D
+
 #Константи руху
 const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
@@ -77,3 +79,10 @@ func _on_animated_sprite_2d_animation_finished() -> void:
 	if animated_sprite_2d.animation == "jump_end":
 		jump_in = false
 		jump_double = true
+
+func _set_cam(left: int, top:  int, right: int, bottom: int):
+	Cam.limit_left = left
+	Cam.limit_top = top
+	Cam.limit_right = right
+	Cam.limit_bottom = bottom
+	

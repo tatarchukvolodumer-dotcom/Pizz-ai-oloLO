@@ -48,7 +48,7 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_80a6k"]
-size = Vector2(18, 123)
+size = Vector2(18, 124)
 
 [node name="knife_rotation" type="Node2D" unique_id=1592895310]
 script = ExtResource("1_l575p")
@@ -67,9 +67,8 @@ metadata/_edit_use_anchors_ = true
 libraries/ = SubResource("AnimationLibrary_yeu8s")
 autoplay = &"RESET"
 
-[node name="Area2D" type="Area2D" parent="AnimatableBody2D" unique_id=1012033698]
+[node name="Area2D" type="Area2D" parent="AnimatableBody2D" unique_id=1012033698 groups=["_death_area"]]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D/Area2D" unique_id=2044103992]
-position = Vector2(0, -62.5)
+position = Vector2(0, -62)
 shape = SubResource("RectangleShape2D_80a6k")
-disabled = true

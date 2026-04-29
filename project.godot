@@ -26,6 +26,10 @@ SettingsManager="*uid://crwmknnpo51ft"
 GlobalCanvasModulate="*uid://cyrfel0aacjd3"
 AudioManager="*uid://cn2hxghdhfcic"
 
+[global_group]
+
+_death_area="Area2D, що вбивають гравця"
+
 [input]
 
 left={

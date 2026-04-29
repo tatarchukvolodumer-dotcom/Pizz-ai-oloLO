@@ -118,7 +118,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_pt7v0"]
-size = Vector2(50, 88)
+size = Vector2(40, 83)
 
 [node name="Player" type="CharacterBody2D" unique_id=162535723]
 script = ExtResource("1_rug40")
@@ -130,7 +130,7 @@ animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=737074922]
-position = Vector2(-1, 0)
+position = Vector2(-1, 2.5)
 shape = SubResource("RectangleShape2D_pt7v0")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1022863430]

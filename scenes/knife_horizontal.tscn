@@ -65,12 +65,11 @@ flip_h = true
 libraries/ = SubResource("AnimationLibrary_hhytd")
 autoplay = &"moving"
 
-[node name="Area2D" type="Area2D" parent="AnimatableBody2D" unique_id=608588436]
+[node name="Area2D" type="Area2D" parent="AnimatableBody2D" unique_id=608588436 groups=["_death_area"]]
 position = Vector2(64, 61)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AnimatableBody2D/Area2D" unique_id=1305457918]
 shape = SubResource("RectangleShape2D_hjlnd")
-disabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=241003056]
 light_mask = 0
