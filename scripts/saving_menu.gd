@@ -13,12 +13,15 @@ func _ready() -> void:
 	back.pressed.connect(_on_back_pressed)
 
 func _on_saving1_pressed() -> void:
+	DataBaseManager.curent_save = 1
 	_saving()
 	
 func _on_saving2_pressed() -> void:
+	DataBaseManager.curent_save = 2
 	_saving()
 	
 func _on_saving3_pressed() -> void:
+	DataBaseManager.curent_save = 3
 	_saving()
 	
 func _on_back_pressed() -> void:

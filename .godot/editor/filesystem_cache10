@@ -1,15 +1,25 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1777487080
+::res://::1777646537
 default_bus_layout.tres::AudioBusLayout::7961056342537973665::1777394469::0::1::::<><><>0<>0<><>::
-export_presets.cfg::TextFile::-1::1777394469::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1777490084::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::3128981606640128985::1773569606::1777394828::1::::<><><>0<>0<>aaec14ff6ac3635c40ccb506369ebff2<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-::res://addons/::1773573470
+::res://addons/::1777644995
+::res://addons/db_browser/::1777645003
+::res://addons/db_browser/bearer/::1777645003
+::res://addons/db_browser/extensions/::1777645003
+::res://addons/db_browser/iconengines/::1777645003
+::res://addons/db_browser/imageformats/::1777645003
+::res://addons/db_browser/licenses/::1777645003
+::res://addons/db_browser/platforms/::1777645003
+::res://addons/db_browser/printsupport/::1777645003
+::res://addons/db_browser/styles/::1777645003
+::res://addons/db_browser/translations/::1777645003
 ::res://addons/godot-sqlite/::1776095734
 gdsqlite.gdextension::GDExtension::4837341577405836572::1773569878::0::1::::<><><>0<>0<><>::
 godot-sqlite.gd::GDScript::6354497535622739150::1773569878::0::1::::<>EditorPlugin<><>0<>1<><>::
 LICENSE.md::TextFile::-1::1773569870::0::1::::<><><>0<>0<><>::
 plugin.cfg::TextFile::-1::1773569878::0::1::::<><><>0<>0<><>::
-::res://addons/godot-sqlite/bin/::1777452032
+::res://addons/godot-sqlite/bin/::1777643199
 ::res://addons/godot-sqlite/bin/libgdsqlite.ios.template_debug.xcframework/::1776095735
 ::res://addons/godot-sqlite/bin/libgdsqlite.ios.template_debug.xcframework/ios-arm64/::1776095735
 ::res://addons/godot-sqlite/bin/libgdsqlite.ios.template_debug.xcframework/ios-arm64_x86_64-simulator/::1776095735
@@ -62,29 +72,27 @@ scrolling_mark.png::CompressedTexture2D::3692423691442016475::1773569606::177356
 Success_finished_level.tscn::PackedScene::1231023214823641396::1777394469::0::1::::<><><>0<>0<><>::
 фон_меню.png::CompressedTexture2D::5574585736190983746::1773569606::1773569622::1::::<><><>0<>0<>9b55913f64f5e2959f4bb18a5421edf8<>res://.godot/imported/фон_меню.png-dbd1133da19dfad3f7f67a5b792843e6.ctex::
 фон_рівня.jpg::CompressedTexture2D::1172508715396827747::1777394469::1777394828::1::::<><><>0<>0<>bf7f56c5b7bdb971c87d4f1477e01887<>res://.godot/imported/фон_рівня.jpg-a189a338931de2ab4ba2330c2b565d3a.ctex::
-::res://scenes/::1777487080
+::res://scenes/::1777647686
 audio_manager.tscn::PackedScene::5741500952349006418::1777394472::0::1::::<><><>0<>0<><>::uid://bje6jduftuuds::::res://scripts/audio_manager.gd
 CanvasModulate.tscn::PackedScene::6492779381034498550::1777394469::0::1::::<><><>0<>0<><>::uid://b565t685k02xx::::res://scripts/canvas_modulate.gd
 chose_level_menu.tscn::PackedScene::3257381310948787127::1777394469::0::1::::<><><>0<>0<><>::uid://dyequt0kxmo8o::::res://scripts/chose_level_menu.gd<>uid://clomu3gll434a::::res://images/фон_меню.png<>uid://cj7fwg0n6mvta::::res://fonts/Playball-Regular.ttf<>uid://otoycn80hx8w::::res://images/inactive_pizza.png
-fork.tscn::PackedScene::9062305194959743157::1777463580::0::1::::<><><>0<>0<><>::uid://2qp0sce07rlt::::res://assets/tools/Fork (2).png<>uid://kit6pfeh5w::::res://scripts/fork.gd
-knife_horizontal.tscn::PackedScene::403429531692110654::1777463418::0::1::::<><><>0<>0<><>::uid://bwy46trfojkrx::::res://assets/tools/Knife (1).png<>uid://dm2o8ajkwg42b::::res://scripts/knife_horizontal.gd
-knife_rotation.tscn::PackedScene::2946669340751784925::1777463547::0::1::::<><><>0<>0<><>::uid://bwy46trfojkrx::::res://assets/tools/Knife (1).png<>uid://dhmv6sqj260io::::res://scripts/knife_rotation.gd
-level.tscn::PackedScene::3718585921183908613::1777487120::0::1::::<><><>0<>0<><>::uid://bvekdsowl1t4w::::res://level.gd<>uid://qx8buuunomk6::::res://images/фон_рівня.jpg<>uid://btdixp1lrrmqo::::res://assets/levels/Astolfo (1).png<>uid://cgxvb064nbyhj::::res://assets/levels/Terrain (16x16).png<>uid://6hrchnootkup::::res://scenes/player.tscn<>uid://b6b8rqcsclw4u::::res://scenes/timer_scene.tscn<>uid://2bj8jhtgc3ea::::res://scenes/oven.tscn<>uid://b4ypk2ac7roow::::res://images/pizza_2.png
-level_01.tscn::PackedScene::7775446890482470646::1777454176::0::1::::<><><>0<>0<><>::uid://bwoj5s0pc73q1::::res://scripts/level_01.gd<>uid://qx8buuunomk6::::res://images/фон_рівня.jpg<>uid://btdixp1lrrmqo::::res://assets/levels/Astolfo (1).png<>uid://cgxvb064nbyhj::::res://assets/levels/Terrain (16x16).png<>uid://c2qqhb3caquq7::::res://scenes/plate.tscn<>uid://6hrchnootkup::::res://scenes/player.tscn<>uid://b6b8rqcsclw4u::::res://scenes/timer_scene.tscn<>uid://f0oop2xx86qk::::res://scenes/knife_horizontal.tscn<>uid://d2d33v8iydn6l::::res://scenes/fork.tscn<>uid://2bj8jhtgc3ea::::res://scenes/oven.tscn<>uid://degwl6xu8xx81::::res://images/pizza_1.png
-level_1.tscn::PackedScene::5512725648940018386::1777487073::0::1::::<><><>0<>0<><>::uid://bs8ktjiw6un1n::::res://scenes/level.tscn<>uid://bl321rv8o7ik4::::res://scenes/level_1.gd<>uid://bh8nhi3rxsn5n::::res://scenes/knife_rotation.tscn<>uid://f0oop2xx86qk::::res://scenes/knife_horizontal.tscn<>uid://d2d33v8iydn6l::::res://scenes/fork.tscn<>uid://c2qqhb3caquq7::::res://scenes/plate.tscn<>uid://degwl6xu8xx81::::res://images/pizza_1.png
-level_02.tscn::PackedScene::4385578572918030864::1777453426::0::1::::<><><>0<>0<><>::uid://bv7m6aowtndvd::::res://scripts/level_2.gd<>uid://qx8buuunomk6::::res://images/фон_рівня.jpg<>uid://btdixp1lrrmqo::::res://assets/levels/Astolfo (1).png<>uid://cgxvb064nbyhj::::res://assets/levels/Terrain (16x16).png<>uid://c2qqhb3caquq7::::res://scenes/plate.tscn<>uid://6hrchnootkup::::res://scenes/player.tscn<>uid://b6b8rqcsclw4u::::res://scenes/timer_scene.tscn<>uid://f0oop2xx86qk::::res://scenes/knife_horizontal.tscn<>uid://2bj8jhtgc3ea::::res://scenes/oven.tscn<>uid://b4ypk2ac7roow::::res://images/pizza_2.png
-level_2.tscn::PackedScene::8548404806922271108::1777487080::0::1::::<><><>0<>0<><>::uid://bs8ktjiw6un1n::::res://scenes/level.tscn<>uid://droaf6coacslx::::res://scripts/level_2.gd<>uid://btdixp1lrrmqo::::res://assets/levels/Astolfo (1).png<>uid://cgxvb064nbyhj::::res://assets/levels/Terrain (16x16).png<>uid://bh8nhi3rxsn5n::::res://scenes/knife_rotation.tscn<>uid://f0oop2xx86qk::::res://scenes/knife_horizontal.tscn
-level_03.tscn::PackedScene::6575023854882583960::1777453437::0::1::::<><><>0<>0<><>::uid://2nawh5swvpyj::::res://scripts/level_03.gd<>uid://qx8buuunomk6::::res://images/фон_рівня.jpg<>uid://btdixp1lrrmqo::::res://assets/levels/Astolfo (1).png<>uid://cgxvb064nbyhj::::res://assets/levels/Terrain (16x16).png<>uid://c2qqhb3caquq7::::res://scenes/plate.tscn<>uid://6hrchnootkup::::res://scenes/player.tscn<>uid://b6b8rqcsclw4u::::res://scenes/timer_scene.tscn<>uid://2bj8jhtgc3ea::::res://scenes/oven.tscn<>uid://b4hc3nckgn4ts::::res://images/pizza_3.png
+fork.tscn::PackedScene::9062305194959743157::1777489679::0::1::::<><><>0<>0<><>::uid://2qp0sce07rlt::::res://assets/tools/Fork (2).png<>uid://kit6pfeh5w::::res://scripts/fork.gd
+knife_horizontal.tscn::PackedScene::403429531692110654::1777647686::0::1::::<><><>0<>0<><>::uid://bwy46trfojkrx::::res://assets/tools/Knife (1).png<>uid://dm2o8ajkwg42b::::res://scripts/knife_horizontal.gd
+knife_rotation.tscn::PackedScene::2946669340751784925::1777489696::0::1::::<><><>0<>0<><>::uid://bwy46trfojkrx::::res://assets/tools/Knife (1).png<>uid://dhmv6sqj260io::::res://scripts/knife_rotation.gd
+level.tscn::PackedScene::3718585921183908613::1777488011::0::1::::<><><>0<>0<><>::uid://bvekdsowl1t4w::::res://scripts/level.gd<>uid://qx8buuunomk6::::res://images/фон_рівня.jpg<>uid://btdixp1lrrmqo::::res://assets/levels/Astolfo (1).png<>uid://cgxvb064nbyhj::::res://assets/levels/Terrain (16x16).png<>uid://6hrchnootkup::::res://scenes/player.tscn<>uid://b6b8rqcsclw4u::::res://scenes/timer_scene.tscn<>uid://2bj8jhtgc3ea::::res://scenes/oven.tscn<>uid://b4ypk2ac7roow::::res://images/pizza_2.png
+level_1.tscn::PackedScene::5512725648940018386::1777643887::0::1::::<><><>0<>0<><>::uid://bs8ktjiw6un1n::::res://scenes/level.tscn<>uid://bl321rv8o7ik4::::res://scripts/level_1.gd<>uid://bh8nhi3rxsn5n::::res://scenes/knife_rotation.tscn<>uid://f0oop2xx86qk::::res://scenes/knife_horizontal.tscn<>uid://xrs5eefyjry::::res://images/pizza_unsuccess_finished_level.png<>uid://d2d33v8iydn6l::::res://scenes/fork.tscn<>uid://c2qqhb3caquq7::::res://scenes/plate.tscn<>uid://cj7fwg0n6mvta::::res://fonts/Playball-Regular.ttf<>uid://degwl6xu8xx81::::res://images/pizza_1.png
+level_2.tscn::PackedScene::8548404806922271108::1777488447::0::1::::<><><>0<>0<><>::uid://bs8ktjiw6un1n::::res://scenes/level.tscn<>uid://droaf6coacslx::::res://scripts/level_2.gd<>uid://btdixp1lrrmqo::::res://assets/levels/Astolfo (1).png<>uid://cgxvb064nbyhj::::res://assets/levels/Terrain (16x16).png<>uid://c2qqhb3caquq7::::res://scenes/plate.tscn<>uid://bh8nhi3rxsn5n::::res://scenes/knife_rotation.tscn<>uid://d2d33v8iydn6l::::res://scenes/fork.tscn<>uid://f0oop2xx86qk::::res://scenes/knife_horizontal.tscn
+level_3.tscn::PackedScene::5495255051493370386::1777490049::0::1::::<><><>0<>0<><>::uid://bs8ktjiw6un1n::::res://scenes/level.tscn<>uid://cj1uerb4qyhti::::res://scripts/level_3.gd<>uid://d2d33v8iydn6l::::res://scenes/fork.tscn<>uid://f0oop2xx86qk::::res://scenes/knife_horizontal.tscn<>uid://bh8nhi3rxsn5n::::res://scenes/knife_rotation.tscn<>uid://c2qqhb3caquq7::::res://scenes/plate.tscn
 level_finished_menu.tscn::PackedScene::3673762266144344024::1777394469::0::1::::<><><>0<>0<><>::uid://clomu3gll434a::::res://images/фон_меню.png<>uid://de3nl7spdfn0::::res://scripts/level_finished_menu.gd<>uid://cj7fwg0n6mvta::::res://fonts/Playball-Regular.ttf<>uid://xrs5eefyjry::::res://images/pizza_unsuccess_finished_level.png
 main_menu.tscn::PackedScene::402135379378280512::1777394469::0::1::::<><><>0<>0<><>::uid://ce3raeq3tdl73::::res://scripts/main_menu.gd<>uid://clomu3gll434a::::res://images/фон_меню.png<>uid://cj7fwg0n6mvta::::res://fonts/Playball-Regular.ttf
 oven.tscn::PackedScene::1897769024509878280::1777394469::0::1::::<><><>0<>0<><>::uid://citfr7rea318e::::res://scripts/oven.gd<>uid://cf5arlj1nn0l4::::res://assets/tools/Oven (1).png
-plate.tscn::PackedScene::6701954257989027792::1777394469::0::1::::<><><>0<>0<><>::uid://b8odvkxyb0d45::::res://assets/tools/Plate (1).png
-player.tscn::PackedScene::2191340945923734103::1777456716::0::1::::<><><>0<>0<><>::uid://gwekc0ixqqpd::::res://assets/player/idle.png<>uid://m7jnfovxje2n::::res://scripts/player.gd<>uid://dfwkesxjr4cws::::res://assets/player/jump.png<>uid://b7i61ofmk1dak::::res://assets/player/run.png
+plate.tscn::PackedScene::6701954257989027792::1777489924::0::1::::<><><>0<>0<><>::uid://b8odvkxyb0d45::::res://assets/tools/Plate (1).png
+player.tscn::PackedScene::2191340945923734103::1777489950::0::1::::<><><>0<>0<><>::uid://gwekc0ixqqpd::::res://assets/player/idle.png<>uid://m7jnfovxje2n::::res://scripts/player.gd<>uid://dfwkesxjr4cws::::res://assets/player/jump.png<>uid://b7i61ofmk1dak::::res://assets/player/run.png
 saving_menu.tscn::PackedScene::1459082647448180135::1777394469::0::1::::<><><>0<>0<><>::uid://clomu3gll434a::::res://images/фон_меню.png<>uid://ck28yo3jhruqy::::res://scripts/saving_menu.gd<>uid://cj7fwg0n6mvta::::res://fonts/Playball-Regular.ttf
 scroll_bar.tscn::PackedScene::3360667120142393259::1773569606::0::1::::<><><>0<>0<><>::uid://c53m7w2pap7ff::::res://scripts/scroll_bar.gd<>uid://b2jsp1juuep12::::res://images/scrolling.png<>uid://bsuvxcuy6olnv::::res://images/scrolling_mark.png<>uid://bf0mnh54b10td::::res://images/scrolling_fill.png<>uid://d3uyqx6e2rtap::::res://images/colored_track.png
 settings_menu.tscn::PackedScene::540957002069371133::1777394469::0::1::::<><><>0<>0<><>::uid://clomu3gll434a::::res://images/фон_меню.png<>uid://cg4olojjf5fj5::::res://scripts/settings_menu.gd<>uid://cj7fwg0n6mvta::::res://fonts/Playball-Regular.ttf<>uid://bn46xxea1n76f::::res://scenes/scroll_bar.tscn<>uid://q4bwi1f6mal2::::res://scripts/screen_resolution.gd<>uid://gpoynvbrrb7u::::res://images/button_left.png<>uid://bqyw4c6albbyx::::res://images/button_right.png<>uid://dpabr02ucxmgi::::res://scripts/display_mode.gd<>uid://dmabbof053vwx::::res://scripts/fps_lock.gd
 timer_scene.tscn::PackedScene::4566374077768021502::1777394469::0::1::::<><><>0<>0<><>::uid://bfsoyvjubogkx::::res://scripts/timer_scene.gd<>uid://cj7fwg0n6mvta::::res://fonts/Playball-Regular.ttf
-::res://scripts/::1777487080
+::res://scripts/::1777647686
 audio_manager.gd::GDScript::3028276275092051640::1777394472::0::1::::<>Node2D<><>0<>0<><>::
 canvas_modulate.gd::GDScript::4557938823656953465::1777394469::0::1::::<>CanvasModulate<><>0<>0<><>::
 chose_level_menu.gd::GDScript::8853060034220022904::1777394469::0::1::::<>Control<><>0<>0<><>::
@@ -94,16 +102,15 @@ fps_lock.gd::GDScript::8001591421750388471::1777394469::0::1::::<>HBoxContainer<
 fps_radio_button.gd::GDScript::6100611840746998454::1777394469::0::1::::<>Button<><>0<>0<><>::
 knife_horizontal.gd::GDScript::8058175357580161435::1777394469::0::1::::<>Node2D<><>0<>0<><>::
 knife_rotation.gd::GDScript::7676687876636815434::1777394469::0::1::::<>Node2D<><>0<>0<><>::
-level_01.gd::GDScript::3960077543764603114::1777454176::0::1::::<>Node2D<><>0<>0<><>::
-level_1.gd::GDScript::3217987257128543057::1777485926::0::1::::<>Node2D<><>0<>0<><>::
-level_02.gd::GDScript::3927230474398689969::1777394472::0::1::::<>Node2D<><>0<>0<><>::
-level_2.gd::GDScript::8381384242401874085::1777485988::0::1::::<>Node2D<><>0<>0<><>::
-level_03.gd::GDScript::1921975391351223229::1777394472::0::1::::<>Node2D<><>0<>0<><>::
+level.gd::GDScript::3869257406480287868::1777484833::0::1::::<>Node2D<><>0<>0<><>::
+level_1.gd::GDScript::3217987257128543057::1777487256::0::1::::<>Node2D<><>0<>0<><>::
+level_2.gd::GDScript::8381384242401874085::1777488447::0::1::::<>Node2D<><>0<>0<><>::
+level_3.gd::GDScript::5459437160546714186::1777490049::0::1::::<>Node2D<><>0<>0<><>::
 level_finished_menu.gd::GDScript::220547961077160623::1777483207::0::1::::<>Control<><>0<>0<><>::
 main_menu.gd::GDScript::5112431744037020496::1777394469::0::1::::<>Control<><>0<>0<><>::
 oven.gd::GDScript::5373910944469565550::1777394469::0::1::::<>StaticBody2D<><>0<>0<><>::
 player.gd::GDScript::908896165271214731::1777456620::0::1::::<>CharacterBody2D<><>0<>0<><>::
-level.gd::GDScript::3869257406480287868::1777484833::0::1::::<>Node2D<><>0<>0<><>::
+DataBasemaager.gd::GDScript::6822619924884959425::1777647686::0::1::::<>Node<><>0<>0<><>::
 saving_menu.gd::GDScript::5532515301941541408::1777394469::0::1::::<>Control<><>0<>0<><>::
 SceneManager.gd::GDScript::2398980678712801312::1777483606::0::1::::<>Node<><>0<>0<><>::
 screen_resolution.gd::GDScript::1182988918155717377::1777394469::0::1::::<>HBoxContainer<><>0<>0<><>::

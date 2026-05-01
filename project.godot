@@ -25,6 +25,7 @@ SceneManager="*uid://bagc4jv4nnkoe"
 SettingsManager="*uid://crwmknnpo51ft"
 GlobalCanvasModulate="*uid://cyrfel0aacjd3"
 AudioManager="*uid://cn2hxghdhfcic"
+DataBaseManager="*uid://c4g6s2xqnc7xt"
 
 [global_group]
 

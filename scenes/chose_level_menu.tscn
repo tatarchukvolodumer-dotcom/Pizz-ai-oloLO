@@ -152,7 +152,7 @@ theme_override_constants/margin_top = 2
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 2
 
-[node name="pizza1_1" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1/level1/1_1" unique_id=1782557684]
+[node name="pizza1_1" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1/level1/1_1" unique_id=1782557684 groups=["pizza"]]
 layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("3_5jxb8")
@@ -165,7 +165,7 @@ theme_override_constants/margin_top = 2
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 2
 
-[node name="pizza1_2" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1/level1/1_2" unique_id=1462309714]
+[node name="pizza1_2" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1/level1/1_2" unique_id=1462309714 groups=["pizza"]]
 layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("3_5jxb8")
@@ -178,7 +178,7 @@ theme_override_constants/margin_top = 2
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 2
 
-[node name="pizza1_3" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1/level1/1_3" unique_id=2100863317]
+[node name="pizza1_3" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level1_button/level1/level1/1_3" unique_id=2100863317 groups=["pizza"]]
 layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("3_5jxb8")
@@ -215,7 +215,7 @@ theme_override_constants/margin_top = 2
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 2
 
-[node name="pizza2_1" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2/level2/2_1" unique_id=395834533]
+[node name="pizza2_1" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2/level2/2_1" unique_id=395834533 groups=["pizza"]]
 layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("3_5jxb8")
@@ -228,7 +228,7 @@ theme_override_constants/margin_top = 2
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 2
 
-[node name="pizza2_2" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2/level2/2_2" unique_id=822320509]
+[node name="pizza2_2" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2/level2/2_2" unique_id=822320509 groups=["pizza"]]
 layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("3_5jxb8")
@@ -241,7 +241,7 @@ theme_override_constants/margin_top = 2
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 2
 
-[node name="pizza2_3" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2/level2/2_3" unique_id=682815942]
+[node name="pizza2_3" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level2_button/level2/level2/2_3" unique_id=682815942 groups=["pizza"]]
 layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("3_5jxb8")
@@ -279,7 +279,7 @@ theme_override_constants/margin_top = 2
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 2
 
-[node name="pizza3_1" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3/level3/3_1" unique_id=1866686961]
+[node name="pizza3_1" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3/level3/3_1" unique_id=1866686961 groups=["pizza"]]
 layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("3_5jxb8")
@@ -292,7 +292,7 @@ theme_override_constants/margin_top = 2
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 2
 
-[node name="pizza3_2" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3/level3/3_2" unique_id=651937347]
+[node name="pizza3_2" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3/level3/3_2" unique_id=651937347 groups=["pizza"]]
 layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("3_5jxb8")
@@ -305,7 +305,7 @@ theme_override_constants/margin_top = 2
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 2
 
-[node name="pizza3_3" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3/level3/3_3" unique_id=590461790]
+[node name="pizza3_3" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3/level3/3_3" unique_id=590461790 groups=["pizza"]]
 layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("3_5jxb8")
