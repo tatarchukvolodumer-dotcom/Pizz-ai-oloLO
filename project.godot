@@ -10,10 +10,10 @@ config_version=5
 
 [application]
 
-config/name="Pizz-ai`o;oLO"
+config/name="Pizz-ai`oloLO"
 run/main_scene="uid://fy2d1iuwp8c7"
 config/features=PackedStringArray("4.6", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://nmaufu1c4ft5"
 
 [audio]
 

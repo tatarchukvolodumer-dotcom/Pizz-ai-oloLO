@@ -41,22 +41,19 @@ func _get_level_quality(level_id: int) -> int:
 
 
 func _set_level_pizzas(level_id: int, quality: int) -> void:
-	var pizzas = []
-	
 	for pizza in get_tree().get_nodes_in_group("pizza"):
-		if pizza.name.begins_with("pizza%d_" % level_id):
-			pizzas.append(pizza)
-	
-	pizzas.sort_custom(func(a, b):
-		return a.name < b.name
-	)
-	
-	for pizza in pizzas:
-		pizza.texture = pizza_unsuccess
-	
-	for i in range(quality):
-		if i < pizzas.size():
-			pizzas[i].texture = pizza_success
+		var pizza_name := str(pizza.name)
+		
+		if not pizza_name.begins_with("pizza%d_" % level_id):
+			continue
+		
+		var parts := pizza_name.split("_")
+		var pizza_number := int(parts[1])
+		
+		if pizza_number <= quality:
+			pizza.texture = pizza_success
+		else:
+			pizza.texture = pizza_unsuccess
 
 
 func _on_level1_button_pressed() -> void:

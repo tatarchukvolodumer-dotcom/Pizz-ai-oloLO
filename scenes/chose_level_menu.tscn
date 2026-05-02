@@ -305,7 +305,7 @@ theme_override_constants/margin_top = 2
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 2
 
-[node name="pizza3_3" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3/level3/3_3" unique_id=590461790 groups=["pizza"]]
+[node name="pizza3_3" type="TextureRect" parent="Panel/VBoxContainer/level_button/HBoxContainer/level3_button/level3/level3/3_3" unique_id=650205072 groups=["pizza"]]
 layout_mode = 2
 size_flags_horizontal = 3
 texture = ExtResource("3_5jxb8")

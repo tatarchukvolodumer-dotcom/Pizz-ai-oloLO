@@ -1,10 +1,2 @@
-res://scenes/level_1.tscn
-res://scripts/DataBasemaager.gd
-res://scenes/knife_horizontal.tscn
-res://scenes/saving_menu.tscn
-res://scripts/saving_menu.gd
-res://scripts/DataBaseManager.gd
-res://scenes/level_finished_menu.tscn
-res://scripts/level_finished_menu.gd
 res://scenes/chose_level_menu.tscn
 res://scripts/chose_level_menu.gd
