@@ -1,2 +1,9 @@
-res://scenes/chose_level_menu.tscn
-res://scripts/chose_level_menu.gd
+res://scenes/level_1.tscn
+res://addons/gut/gui/editor_globals.gd
+res://addons/gut/gui/EditorRadioButton.tres
+res://test/test_player.gd
+res://scripts/player.gd
+res://unit_testing/unit_player.gd
+res://unit_testing/unit_player.tscn
+res://test/test_database_manager.gd
+res://unit_testing/unit_database_manager.gd

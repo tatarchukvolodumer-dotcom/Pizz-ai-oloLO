@@ -27,6 +27,10 @@ GlobalCanvasModulate="*uid://cyrfel0aacjd3"
 AudioManager="*uid://cn2hxghdhfcic"
 DataBaseManager="*uid://c4g6s2xqnc7xt"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/gut/plugin.cfg")
+
 [global_group]
 
 _death_area="Area2D, що вбивають гравця"
