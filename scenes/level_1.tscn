@@ -62,6 +62,7 @@ text = "Movement:
 A - left
 D -right
 SPACE - jump"
+paragraph_separator = "\\"
 
 [node name="Player" parent="." index="8" unique_id=162535723]
 position = Vector2(170, 695)
