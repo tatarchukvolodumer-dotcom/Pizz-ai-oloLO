@@ -1,6 +1,6 @@
 extends GutTest
 
-var DatabaseManager = preload("res://unit_testing/unit_database_manager.gd")
+var DatabaseManager = preload("res://tests/tested_units/unit_database_manager.gd")
 
 func test_unit_choose_level_menu():
 	var datamanager = DatabaseManager.new()

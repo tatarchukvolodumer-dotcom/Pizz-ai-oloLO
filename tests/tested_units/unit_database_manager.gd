@@ -3,21 +3,18 @@ extends Node
 var unit_database : SQLite
 
 func unit_choose_level_menu(level_id, curent_save):
-	unit_database = SQLite.new()
-	unit_database.path = "res://unit_testing/unit_data.db"
-	unit_database.open_db()
+	
+	_open_db()
 	
 	unit_database.query("""
-        SELECT quality
-        FROM saving
-        WHERE level_id = %d AND save_id = %d;
+		SELECT quality
+		FROM saving
+		WHERE level_id = %d AND save_id = %d;
 	""" % [level_id, curent_save])
 	
 func unit_data_write(success_count, level_number, curent_save):
 	
-	unit_database = SQLite.new()
-	unit_database.path = "res://unit_testing/unit_data.db"
-	unit_database.open_db()
+	_open_db()
 	
 	unit_database.query("""
 	SELECT *
@@ -41,3 +38,8 @@ func unit_data_write(success_count, level_number, curent_save):
 	WHERE level_id = %d
 	and save_id = %d;
 	""" % [level_number, curent_save])
+	
+func _open_db():
+	unit_database = SQLite.new()
+	unit_database.path = "res://tests/tested_units/unit_data.db"
+	unit_database.open_db()

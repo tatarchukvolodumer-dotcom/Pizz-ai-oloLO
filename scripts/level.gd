@@ -50,7 +50,7 @@ func _on_oven_entered(body):
 		AudioManager.music_play()
 
 func _death(body):
-	if body == Player and !Player.invinceble:
+	if body == Player and !Player.invincible:
 		AudioManager.sfx1_play("death")
 		body.position = spawn_position
 		secret_texture.texture = pizza

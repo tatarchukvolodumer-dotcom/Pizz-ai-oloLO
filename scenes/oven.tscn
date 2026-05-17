@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://2bj8jhtgc3ea"]
 
-[ext_resource type="Script" uid="uid://citfr7rea318e" path="res://scripts/oven.gd" id="1_nd33l"]
 [ext_resource type="Texture2D" uid="uid://cf5arlj1nn0l4" path="res://assets/tools/Oven (1).png" id="1_pgxas"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nd33l"]
@@ -84,7 +83,6 @@ size = Vector2(46, 47)
 size = Vector2(93, 72)
 
 [node name="oven" type="StaticBody2D" unique_id=586987638]
-script = ExtResource("1_nd33l")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1628839189]
 sprite_frames = SubResource("SpriteFrames_12mj8")

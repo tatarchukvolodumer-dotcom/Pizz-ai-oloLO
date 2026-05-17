@@ -1,6 +1,6 @@
 extends GutTest
 
-var PlayerScene = preload("res://unit_testing/unit_player.tscn")
+var PlayerScene = preload("res://tests/tested_units/unit_player.tscn")
 
 func test_animation_finished_jump_start():
 	var player = PlayerScene.instantiate()
