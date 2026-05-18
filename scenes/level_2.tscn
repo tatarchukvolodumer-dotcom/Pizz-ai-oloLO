@@ -2,8 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://bs8ktjiw6un1n" path="res://scenes/level.tscn" id="1_3bmlt"]
 [ext_resource type="Script" uid="uid://droaf6coacslx" path="res://scripts/level_2.gd" id="2_eqxsl"]
-[ext_resource type="Texture2D" uid="uid://btdixp1lrrmqo" path="res://assets/levels/Astolfo (1).png" id="2_ne2mo"]
-[ext_resource type="Texture2D" uid="uid://cgxvb064nbyhj" path="res://assets/levels/Terrain (16x16).png" id="3_6cvei"]
+[ext_resource type="Texture2D" uid="uid://btdixp1lrrmqo" path="res://assets/platforms/Astolfo (1).png" id="2_ne2mo"]
+[ext_resource type="Texture2D" uid="uid://cgxvb064nbyhj" path="res://assets/platforms/Terrain (16x16).png" id="3_6cvei"]
 [ext_resource type="PackedScene" uid="uid://c2qqhb3caquq7" path="res://scenes/plate.tscn" id="5_ne2mo"]
 [ext_resource type="PackedScene" uid="uid://bh8nhi3rxsn5n" path="res://scenes/knife_rotation.tscn" id="6_wo48x"]
 [ext_resource type="PackedScene" uid="uid://d2d33v8iydn6l" path="res://scenes/fork.tscn" id="7_ne2mo"]

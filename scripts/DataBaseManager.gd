@@ -11,7 +11,6 @@ func _ready() -> void:
 	_create_tables()
 	_seed_data()
 
-
 func _create_tables():
 	# level
 	database.query("""

@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://d2d33v8iydn6l" path="res://scenes/fork.tscn" id="8_15mv3"]
 [ext_resource type="PackedScene" uid="uid://c2qqhb3caquq7" path="res://scenes/plate.tscn" id="8_e3sih"]
 [ext_resource type="FontFile" uid="uid://cj7fwg0n6mvta" path="res://fonts/Playball-Regular.ttf" id="9_2os1m"]
-[ext_resource type="Texture2D" uid="uid://degwl6xu8xx81" path="res://images/pizza_1.png" id="11_2os1m"]
+[ext_resource type="Texture2D" uid="uid://degwl6xu8xx81" path="res://assets/tools/pizza_1.png" id="11_2os1m"]
 
 [node name="level" unique_id=341449454 instance=ExtResource("1_014kd")]
 script = ExtResource("2_pa8r4")

@@ -2,12 +2,13 @@
 
 [ext_resource type="Script" uid="uid://bvekdsowl1t4w" path="res://scripts/level.gd" id="1_b121j"]
 [ext_resource type="Texture2D" uid="uid://qx8buuunomk6" path="res://images/фон_рівня.jpg" id="2_8c41q"]
-[ext_resource type="Texture2D" uid="uid://btdixp1lrrmqo" path="res://assets/levels/Astolfo (1).png" id="3_olg7q"]
-[ext_resource type="Texture2D" uid="uid://cgxvb064nbyhj" path="res://assets/levels/Terrain (16x16).png" id="4_t1rx8"]
+[ext_resource type="Texture2D" uid="uid://btdixp1lrrmqo" path="res://assets/platforms/Astolfo (1).png" id="3_olg7q"]
+[ext_resource type="Texture2D" uid="uid://cgxvb064nbyhj" path="res://assets/platforms/Terrain (16x16).png" id="4_t1rx8"]
 [ext_resource type="PackedScene" uid="uid://6hrchnootkup" path="res://scenes/player.tscn" id="5_8iemx"]
 [ext_resource type="PackedScene" uid="uid://b6b8rqcsclw4u" path="res://scenes/timer_scene.tscn" id="6_64w2a"]
 [ext_resource type="PackedScene" uid="uid://2bj8jhtgc3ea" path="res://scenes/oven.tscn" id="7_fpun6"]
-[ext_resource type="Texture2D" uid="uid://b4ypk2ac7roow" path="res://images/pizza_2.png" id="8_wc255"]
+[ext_resource type="Texture2D" uid="uid://b4ypk2ac7roow" path="res://assets/tools/pizza_2.png" id="8_wc255"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_arp2o"]
 texture = ExtResource("3_olg7q")

@@ -8,7 +8,7 @@ extends Node2D
 @onready var secret_texture = $secret/TextureRect
 
 var spawn_position = Vector2(0, 0)
-var pizza = load("res://images/pizza_2.png")
+var pizza = load("res://assets/tools/pizza_2.png")
 var level_number = 0
 var result = 1
 
@@ -59,6 +59,6 @@ func _death(body):
 func _set_for_son():
 	timer.set_time(0, 0)
 	Player._set_cam(0, 0, 0, 0)
-	pizza = load("res://images/pizza_2.png")
+	pizza = load("res://assets/tools/pizza_2.png")
 	spawn_position = Vector2(0, 0)
 	level_number = 1
